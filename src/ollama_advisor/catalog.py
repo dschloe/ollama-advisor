@@ -17,7 +17,7 @@ from .purpose import classify_purposes
 LIBRARY_URL = "https://ollama.com/library"
 CACHE_PATH = Path.home() / ".ollama_advisor_cache.json"
 CACHE_TTL_SECONDS = 6 * 60 * 60
-USER_AGENT = "ollama-advisor/0.1.2 (+https://github.com/dschloe/ollama-advisor)"
+USER_AGENT = "ollama-advisor/0.1.3 (+https://github.com/dschloe/ollama-advisor)"
 
 # ollama.com/library serves meta-robots: index, follow — crawling is permitted.
 # See https://ollama.com/robots.txt (Disallow only applies to /search paths).

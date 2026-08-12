@@ -7,7 +7,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ollama-advisor"
-version = "0.1.2"
+version = "0.1.3"
 description = "Recommend, download, and run Ollama models based on your system specs and use case"
 readme = "README.md"
 license = "MIT"

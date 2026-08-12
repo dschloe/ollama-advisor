@@ -104,7 +104,7 @@ import ollama_advisor as oa
 # Recommendations — no Ollama server needed
 oa.recommend(purpose="coding", top_n=5)
 
-# Install + start Ollama in this Colab VM (Colab only)
+# Install + start Ollama in this Colab VM (installs zstd, then Ollama, then serve)
 oa.setup_colab_ollama()
 
 # Then pull / run (small models work best on free Colab RAM)
