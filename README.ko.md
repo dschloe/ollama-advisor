@@ -95,7 +95,7 @@ Ollama가 꺼져 있으면 한국어 안내 메시지와 함께 `OllamaError`가
 import ollama_advisor as oa
 
 oa.recommend(purpose="coding", top_n=5)   # Ollama 불필요
-oa.setup_colab_ollama()                     # Colab 전용 — 설치 + serve
+oa.setup_colab_ollama()                     # Colab 전용 — zstd + Ollama 설치 + serve
 
 oa.pull_model("qwen2.5-coder:0.5b")
 print(oa.run_model("qwen2.5-coder:0.5b", prompt="hello"))

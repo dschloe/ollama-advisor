@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import shutil
 import subprocess
 import time
 from pathlib import Path
@@ -13,6 +14,8 @@ from .ctl import OLLAMA_HOST, OllamaError, is_ollama_installed
 from .system import is_colab
 
 INSTALL_SCRIPT = "curl -fsSL https://ollama.com/install.sh | sh"
+# Ollama's Linux install unpacks with zstd; Colab images often lack it.
+APT_DEPS = ("zstd",)
 
 
 def is_server_running(timeout: float = 3.0) -> bool:
@@ -25,6 +28,40 @@ def is_server_running(timeout: float = 3.0) -> bool:
         return False
 
 
+def _ensure_apt_deps() -> list[str]:
+    """Install Colab apt packages required by the Ollama installer (e.g. zstd)."""
+    done: list[str] = []
+    missing = [pkg for pkg in APT_DEPS if shutil.which(pkg) is None]
+    if not missing:
+        return done
+
+    update = subprocess.run(
+        ["sudo", "apt-get", "update", "-qq"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if update.returncode != 0:
+        raise OllamaError(
+            "Failed to apt-get update in Colab (needed for zstd).\n"
+            f"stdout:\n{update.stdout}\nstderr:\n{update.stderr}"
+        )
+
+    install = subprocess.run(
+        ["sudo", "apt-get", "install", "-y", "-qq", *missing],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if install.returncode != 0:
+        raise OllamaError(
+            f"Failed to install apt packages in Colab: {', '.join(missing)}\n"
+            f"stdout:\n{install.stdout}\nstderr:\n{install.stderr}"
+        )
+    done.extend(f"apt:{pkg}" for pkg in missing)
+    return done
+
+
 def setup_colab_ollama(
     wait_seconds: float = 5.0,
     force_install: bool = False,
@@ -33,8 +70,9 @@ def setup_colab_ollama(
     """
     Install and start Ollama inside the current Google Colab runtime.
 
-    Only callable from Colab. Runs the official install script and starts
-    ``ollama serve`` in the background, then waits until the API is reachable.
+    Only callable from Colab. Installs apt deps (``zstd``), runs the official
+    install script, starts ``ollama serve`` in the background, then waits until
+    the API is reachable.
 
     Parameters
     ----------
@@ -58,6 +96,8 @@ def setup_colab_ollama(
 
     steps: list[str] = []
     log_file = Path(log_path)
+
+    steps.extend(_ensure_apt_deps())
 
     if force_install or not is_ollama_installed():
         result = subprocess.run(
