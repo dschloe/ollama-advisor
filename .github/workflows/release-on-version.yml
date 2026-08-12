@@ -1,7 +1,8 @@
 name: Release on version bump
 
-# When version in pyproject.toml lands on main and no matching tag exists,
-# create a GitHub Release. That triggers publish.yml → PyPI (Trusted Publisher).
+# When a new version reaches main, create a GitHub Release and call Publish
+# (workflow_call). Note: GITHUB_TOKEN-created releases do NOT trigger
+# `on: release` in other workflows — so we invoke publish.yml directly.
 
 on:
   push:
@@ -12,10 +13,14 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 jobs:
   release:
     runs-on: ubuntu-latest
+    outputs:
+      should_publish: ${{ steps.check.outputs.exists == 'false' }}
+      version: ${{ steps.ver.outputs.version }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -57,3 +62,12 @@ jobs:
             ```
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish:
+    needs: release
+    if: needs.release.outputs.should_publish == 'true'
+    uses: ./.github/workflows/publish.yml
+    permissions:
+      id-token: write
+      contents: read
+    secrets: inherit

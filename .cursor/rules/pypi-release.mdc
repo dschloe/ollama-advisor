@@ -21,15 +21,16 @@ Agent checklist:
 3. **PR + merge to main** — `gh pr create` → `gh pr merge --merge --delete-branch`
    - Prefer `/opt/homebrew/bin/git` if wrapper `git commit` fails (`unknown option trailer`).
 4. **Wait for automation** — do **not** stop after merge:
-   - `Release on version bump` → creates `vX.Y.Z` Release (if tag missing)
-   - `Publish` → uploads to PyPI
+   - `Release on version bump` → creates `vX.Y.Z` Release **and** calls `publish.yml` via `workflow_call`
+   - (GITHUB_TOKEN-created releases do not fire `on: release` in sibling workflows — that is why we call Publish directly.)
 5. **Verify**:
    ```bash
    gh run list --workflow=release-on-version.yml --limit 1
-   gh run list --workflow=publish.yml --limit 1
+   gh run list --workflow=publish.yml --limit 2
    curl -s https://pypi.org/pypi/ollama-advisor/json | python3 -c "import sys,json; print(json.load(sys.stdin)['info']['version'])"
    ```
 6. Tell user: `pip install -U ollama-advisor`
+
 
 ## Fallback (manual Release)
 
