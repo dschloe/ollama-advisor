@@ -161,12 +161,17 @@ The workflow in `.github/workflows/publish.yml` uses `pypa/gh-action-pypi-publis
 
 ### 3. Release
 
+**Automatic (preferred):** bump `version` in `pyproject.toml` (and `__version__`), merge to `main`.  
+Workflow `release-on-version.yml` creates tag `vX.Y.Z` + GitHub Release → `publish.yml` uploads to PyPI.
+
+**Manual fallback:**
+
 ```bash
-git tag v0.1.1
-git push origin v0.1.1
+git tag v0.1.2
+git push origin v0.1.2
 ```
 
-Publish a GitHub Release for tag `v0.1.1`. Then:
+Publish a GitHub Release for that tag (or let the automation create it). Then:
 
 1. `publish.yml` runs `pytest` as a gate
 2. On success, uploads wheel/sdist to PyPI

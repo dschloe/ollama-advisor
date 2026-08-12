@@ -5,48 +5,56 @@ alwaysApply: true
 
 # Release & PyPI deploy (ollama-advisor)
 
-When the user asks to ship, release, publish, or “배포”, complete the **full path** — do not stop at merge alone.
+When the user asks to ship, release, publish, or “배포”, complete the **full path** in one go.
 
-## Checklist (in order)
+## Preferred path (one-shot): version bump → merge → auto Release
 
-1. **Tests** — `pytest tests/` must pass locally before commit.
-2. **Version bump** (if shipping to PyPI) — keep in sync:
+`release-on-version.yml` creates a GitHub Release when a **new** `pyproject.toml` version reaches `main`. That Release triggers `publish.yml` → PyPI.
+
+Agent checklist:
+
+1. **Tests** — `pytest tests/` must pass.
+2. **Version bump** (keep in sync):
    - `pyproject.toml` → `version`
    - `src/ollama_advisor/__init__.py` → `__version__`
-   - `catalog.py` → `USER_AGENT` version string
-3. **Commit + PR + merge** — use `gh` when authenticated:
-   - branch → push → `gh pr create` → `gh pr merge --merge --delete-branch`
+   - `catalog.py` → `USER_AGENT`
+3. **PR + merge to main** — `gh pr create` → `gh pr merge --merge --delete-branch`
    - Prefer `/opt/homebrew/bin/git` if wrapper `git commit` fails (`unknown option trailer`).
-4. **GitHub Release (required for PyPI)** — Trusted Publisher only runs on `release: published`:
+4. **Wait for automation** — do **not** stop after merge:
+   - `Release on version bump` → creates `vX.Y.Z` Release (if tag missing)
+   - `Publish` → uploads to PyPI
+5. **Verify**:
    ```bash
-   git tag vX.Y.Z
-   git push origin vX.Y.Z
-   gh release create vX.Y.Z --title "vX.Y.Z" --notes "..."
-   ```
-   Tag push alone is **not** enough; create a **published** Release.
-5. **Verify Publish workflow** — `gh run list --workflow=publish.yml --limit 1` → success.
-6. **Verify PyPI** — confirm version appears (CDN may lag ~1–2 min):
-   ```bash
+   gh run list --workflow=release-on-version.yml --limit 1
+   gh run list --workflow=publish.yml --limit 1
    curl -s https://pypi.org/pypi/ollama-advisor/json | python3 -c "import sys,json; print(json.load(sys.stdin)['info']['version'])"
    ```
-7. Tell the user Colab/install command: `pip install -U ollama-advisor`
+6. Tell user: `pip install -U ollama-advisor`
+
+## Fallback (manual Release)
+
+If auto-release did not run (e.g. version not bumped, or tag already exists):
+
+```bash
+git tag vX.Y.Z && git push origin vX.Y.Z
+gh release create vX.Y.Z --title "vX.Y.Z" --generate-notes
+```
 
 ## Do not
 
-- Ship with only `main` merge and no Release (PyPI stays on old version → missing APIs like `setup_colab_ollama`).
-- Commit secrets (`.env`, tokens). Never paste tokens into chat.
-- Use `uv publish` / API tokens when Trusted Publisher + Release is available.
-- Bump version without updating `__version__` / User-Agent together.
+- Merge without bumping version when the user asked for PyPI deploy.
+- Stop at merge without checking Release + Publish workflows when asked to 배포.
+- Commit secrets. Never paste tokens into chat.
+- Prefer Trusted Publisher over `uv publish` / API tokens.
 
-## Sibling repos (out of scope for this rule)
+## Sibling repos
 
-- `ollama-advisor-agent` — Linear sync; private; no PyPI.
-- `ollama-advisor-integration` — live Ollama e2e tests; not published.
+- `ollama-advisor-agent` / `ollama-advisor-integration` — not published to PyPI.
 
-## Quick user prompt mapping
+## Prompt mapping
 
 | User says | Agent does |
 |-----------|------------|
-| “머지해줘” | PR + merge only (unless they also said 배포) |
-| “배포해줘” / “PyPI” / “Release” | Steps 1–7 including tag + Release + PyPI check |
-| “Colab에 없음” | Check PyPI version vs `__init__`; if behind, run deploy checklist |
+| “머지해줘” | PR + merge (no version bump unless needed) |
+| “배포해줘” / “Release까지” | Version bump + PR + merge + wait/verify Release + PyPI |
+| “Colab에 없음” | Compare PyPI vs `__version__`; if behind, run 배포 path |
