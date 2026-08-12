@@ -148,12 +148,17 @@ API 토큰 없이 `.github/workflows/publish.yml`의 `pypa/gh-action-pypi-publis
 
 ### 3. 릴리스 발행
 
+**자동(권장):** `pyproject.toml`의 `version`(및 `__version__`)을 올린 뒤 `main`에 merge.  
+`release-on-version.yml`이 `vX.Y.Z` Release를 만들고 → `publish.yml`이 PyPI에 업로드합니다.
+
+**수동:**
+
 ```bash
-git tag v0.1.1
-git push origin v0.1.1
+git tag v0.1.2
+git push origin v0.1.2
 ```
 
-GitHub Releases에서 태그 `v0.1.1`으로 Release를 **Publish**하면:
+GitHub Releases에서 Publish(또는 자동 워크플로) 후:
 
 1. `publish.yml`이 `pytest` 게이트 실행
 2. 통과 시 PyPI에 wheel/sdist 업로드
