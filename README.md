@@ -43,6 +43,15 @@ ollama-advisor stop qwen2.5-coder:7b
 ollama-advisor list
 ollama-advisor ps
 ollama-advisor specs
+ollama-advisor snapshot --force-refresh
+```
+
+### Daily catalog snapshot
+
+GitHub Actions (`catalog-daily.yml`) crawls [ollama.com/library](https://ollama.com/library) once per day and commits CSV/JSON under [`data/catalog/`](data/catalog/).
+
+```bash
+ollama-advisor snapshot --output data/catalog --force-refresh
 ```
 
 ## Prerequisites: Ollama

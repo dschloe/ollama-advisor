@@ -8,6 +8,7 @@ import sys
 
 from . import ctl
 from .core import recommend
+from .snapshot import write_catalog_snapshot
 from .system import format_specs_summary, get_system_specs
 
 
@@ -78,6 +79,15 @@ def _cmd_specs(_args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_snapshot(args: argparse.Namespace) -> int:
+    result = write_catalog_snapshot(
+        output_dir=args.output,
+        force_refresh=args.force_refresh,
+    )
+    print(json.dumps(result, indent=2, ensure_ascii=False))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="ollama-advisor",
@@ -122,6 +132,22 @@ def build_parser() -> argparse.ArgumentParser:
 
     specs = sub.add_parser("specs", help="Show detected system specs")
     specs.set_defaults(func=_cmd_specs)
+
+    snap = sub.add_parser(
+        "snapshot",
+        help="Fetch Ollama library catalog and write CSV/JSON under data/catalog",
+    )
+    snap.add_argument(
+        "--output",
+        default="data/catalog",
+        help="Output directory (default: data/catalog)",
+    )
+    snap.add_argument(
+        "--force-refresh",
+        action="store_true",
+        help="Bypass local catalog cache and re-crawl ollama.com",
+    )
+    snap.set_defaults(func=_cmd_snapshot)
 
     return parser
 

@@ -43,6 +43,15 @@ ollama-advisor stop qwen2.5-coder:7b
 ollama-advisor list
 ollama-advisor ps
 ollama-advisor specs
+ollama-advisor snapshot --force-refresh
+```
+
+### 일일 카탈로그 스냅샷
+
+GitHub Actions(`catalog-daily.yml`)가 매일 [ollama.com/library](https://ollama.com/library)를 크롤해 [`data/catalog/`](data/catalog/)에 CSV/JSON을 커밋합니다.
+
+```bash
+ollama-advisor snapshot --output data/catalog --force-refresh
 ```
 
 ## 전제 조건: Ollama 설치
