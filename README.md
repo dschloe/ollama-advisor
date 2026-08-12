@@ -33,6 +33,32 @@ oa.stop_model("qwen2.5-coder:7b")    # Stop / unload a running model
 oa.list_installed()                  # List locally installed models
 ```
 
+### Purpose examples
+
+| `purpose=` | Use when you want… | Example models (if they fit your RAM) |
+|------------|-------------------|----------------------------------------|
+| `"all"` | Every runnable model on this machine | (default — no filter) |
+| `"general"` | Chat, writing, everyday tasks | `llama3.2`, `gemma2`, `mistral` |
+| `"coding"` | Code generation, debugging, SQL | `qwen2.5-coder`, `codellama`, `deepseek-coder` |
+| `"reasoning"` | Math, logic, chain-of-thought | `deepseek-r1`, `qwq` |
+| `"vision"` | Image understanding, multimodal | `llava`, `llama3.2-vision` |
+| `"embedding"` | Vector search / RAG indexes | `nomic-embed-text`, `mxbai-embed-large` |
+| `"audio"` | Speech-to-text | `whisper` |
+
+```python
+# Top 5 coding models that fit this machine
+oa.recommend(purpose="coding", top_n=5)
+
+# Reasoning models, return as a plain list instead of DataFrame
+oa.recommend(purpose="reasoning", as_dataframe=False)
+
+# Refresh catalog from ollama.com, then filter for vision
+oa.recommend(purpose="vision", force_refresh=True)
+
+# Embedding-only models (excludes general chat models)
+oa.recommend(purpose="embedding")
+```
+
 CLI:
 
 ```bash
@@ -66,16 +92,27 @@ ollama-advisor snapshot --output data/catalog --force-refresh
 
 If the Ollama server is not running, an `OllamaError` is raised with platform-specific setup instructions (error messages in the library may be localized).
 
-## Google Colab limitations
+## Google Colab
 
-Colab does **not** officially support keeping Ollama running as a persistent background service. You can start it temporarily:
+`recommend()` works without Ollama. For `pull_model` / `run_model` / `list_installed`, call **`setup_colab_ollama()` once per runtime**:
 
 ```python
-!curl -fsSL https://ollama.ai/install.sh | sh
-!nohup ollama serve > ollama.log 2>&1 &
+!pip install -q ollama-advisor
+
+import ollama_advisor as oa
+
+# Recommendations — no Ollama server needed
+oa.recommend(purpose="coding", top_n=5)
+
+# Install + start Ollama in this Colab VM (Colab only)
+oa.setup_colab_ollama()
+
+# Then pull / run (small models work best on free Colab RAM)
+oa.pull_model("qwen2.5-coder:0.5b")
+print(oa.run_model("qwen2.5-coder:0.5b", prompt="hello"))
 ```
 
-When the runtime shuts down, downloaded models and server state are reset.
+Colab does **not** keep Ollama running after the runtime disconnects — models and server state reset.
 
 In notebooks and Colab, `recommend()` automatically displays a scrollable HTML table.
 
@@ -87,6 +124,7 @@ In notebooks and Colab, `recommend()` automatically displays a scrollable HTML t
 | `catalog.py` | Crawl [ollama.com/library](https://ollama.com/library); cache at `~/.ollama_advisor_cache.json` (6h TTL) |
 | `purpose.py` | Classify models: coding / reasoning / vision / embedding / audio / general |
 | `core.py` | `recommend()` — combine specs, catalog, and purpose |
+| `colab.py` | `setup_colab_ollama()` — install/start Ollama in Google Colab only |
 | `ctl.py` | Wrapper around the official `ollama` Python client |
 
 Memory estimate (approx. 4-bit quantization): `required_gb = billions × 0.6 + 1.0`
