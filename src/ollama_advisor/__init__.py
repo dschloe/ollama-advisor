@@ -1,5 +1,6 @@
 """Ollama model advisor — recommend, pull, run, and manage local models."""
 
+from .colab import setup_colab_ollama
 from .core import recommend
 from .ctl import (
     list_installed,
@@ -13,6 +14,7 @@ from .system import get_system_specs
 
 __all__ = [
     "recommend",
+    "setup_colab_ollama",
     "pull_model",
     "run_model",
     "stop_model",
@@ -22,4 +24,4 @@ __all__ = [
     "get_system_specs",
 ]
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"

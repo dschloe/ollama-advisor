@@ -33,6 +33,25 @@ oa.stop_model("qwen2.5-coder:7b")    # 실행 중지
 oa.list_installed()                  # 로컬에 설치된 모델 목록
 ```
 
+### purpose 예시
+
+| `purpose=` | 용도 | 예시 모델 (RAM이 허용할 때) |
+|------------|------|---------------------------|
+| `"all"` | 전체 추천 | (기본값) |
+| `"general"` | 일반 대화·글쓰기 | `llama3.2`, `gemma2`, `mistral` |
+| `"coding"` | 코드 생성·디버깅 | `qwen2.5-coder`, `codellama` |
+| `"reasoning"` | 수학·논리·추론 | `deepseek-r1`, `qwq` |
+| `"vision"` | 이미지 이해 | `llava`, `llama3.2-vision` |
+| `"embedding"` | 벡터 검색 / RAG | `nomic-embed-text` |
+| `"audio"` | 음성 인식 | `whisper` |
+
+```python
+oa.recommend(purpose="coding", top_n=5)
+oa.recommend(purpose="reasoning", as_dataframe=False)
+oa.recommend(purpose="vision", force_refresh=True)
+oa.recommend(purpose="embedding")
+```
+
 CLI:
 
 ```bash
@@ -66,16 +85,23 @@ ollama-advisor snapshot --output data/catalog --force-refresh
 
 Ollama가 꺼져 있으면 한국어 안내 메시지와 함께 `OllamaError`가 발생합니다.
 
-## Google Colab 제약
+## Google Colab
 
-Colab에서는 Ollama가 **공식적으로 백그라운드 서비스 지속 실행을 지원하지 않습니다**. 임시로 아래처럼 실행할 수 있지만, **런타임 종료 시 모델과 서버 상태가 초기화**됩니다.
+`recommend()`는 Ollama 없이 동작합니다. `pull`/`run`/`list`는 런타임마다 **`setup_colab_ollama()`** 한 번 호출:
 
 ```python
-!curl -fsSL https://ollama.ai/install.sh | sh
-!nohup ollama serve > ollama.log 2>&1 &
+!pip install -q ollama-advisor
+
+import ollama_advisor as oa
+
+oa.recommend(purpose="coding", top_n=5)   # Ollama 불필요
+oa.setup_colab_ollama()                     # Colab 전용 — 설치 + serve
+
+oa.pull_model("qwen2.5-coder:0.5b")
+print(oa.run_model("qwen2.5-coder:0.5b", prompt="hello"))
 ```
 
-노트북/Colab에서는 `recommend()` 호출 시 스크롤 가능한 HTML 테이블이 자동으로 표시됩니다.
+런타임 종료 시 모델·서버 상태는 초기화됩니다. 노트북/Colab에서는 `recommend()`가 스크롤 HTML 테이블을 표시합니다.
 
 ## 동작 방식
 
@@ -85,6 +111,7 @@ Colab에서는 Ollama가 **공식적으로 백그라운드 서비스 지속 실�
 | `catalog.py` | [ollama.com/library](https://ollama.com/library) 크롤링 + `~/.ollama_advisor_cache.json` 캐시 (TTL 6시간) |
 | `purpose.py` | coding/reasoning/vision/embedding/audio/general 분류 |
 | `core.py` | `recommend()` — 사양·카탈로그·용도 조합 |
+| `colab.py` | `setup_colab_ollama()` — Google Colab에서만 Ollama 설치/기동 |
 | `ctl.py` | 공식 `ollama` Python 클라이언트 래핑 |
 
 메모리 추정식(4bit 양자화 근사): `required_gb = billions × 0.6 + 1.0`

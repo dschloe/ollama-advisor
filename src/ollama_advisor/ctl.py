@@ -27,11 +27,15 @@ def install_hint() -> str:
     """Platform-specific guidance for installing and running Ollama."""
     if is_colab():
         return (
-            "Google Colab에서는 Ollama가 공식적으로 백그라운드 서비스 지속 실행을 "
-            "지원하지 않습니다. 임시 실행 예:\n"
-            "  !curl -fsSL https://ollama.ai/install.sh | sh\n"
-            "  !nohup ollama serve > ollama.log 2>&1 &\n"
-            "런타임이 종료되면 다운로드한 모델과 서버 상태가 초기화됩니다."
+            "Google Colab does not keep Ollama running as a persistent background service.\n"
+            "Call setup_colab_ollama() once per runtime, then use pull/run/list:\n\n"
+            "  import ollama_advisor as oa\n"
+            "  oa.setup_colab_ollama()\n\n"
+            "Or manually:\n"
+            "  !curl -fsSL https://ollama.com/install.sh | sh\n"
+            "  !nohup ollama serve > ollama.log 2>&1 &\n\n"
+            "Models and server state reset when the runtime ends.\n"
+            "Tip: recommend() and get_system_specs() work without Ollama."
         )
     if sys.platform == "darwin":
         return (
@@ -62,16 +66,25 @@ def _ensure_client():
     return ollama
 
 
+def _server_error_message() -> str:
+    if is_colab():
+        return (
+            "Cannot connect to Ollama at localhost:11434.\n"
+            f"{install_hint()}"
+        )
+    return (
+        "Ollama 서버(localhost:11434)에 연결할 수 없습니다.\n"
+        f"{install_hint()}"
+    )
+
+
 def _check_server() -> None:
     req = urllib_request.Request(f"{OLLAMA_HOST}/api/tags", method="GET")
     try:
         with urllib_request.urlopen(req, timeout=3):
             return
     except (urllib_error.URLError, OSError, TimeoutError) as exc:
-        raise OllamaError(
-            "Ollama 서버(localhost:11434)에 연결할 수 없습니다.\n"
-            f"{install_hint()}"
-        ) from exc
+        raise OllamaError(_server_error_message()) from exc
 
 
 def _normalize_model_list(raw: Any) -> list[dict[str, Any]]:

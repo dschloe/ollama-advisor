@@ -7,6 +7,7 @@ import json
 import sys
 
 from . import ctl
+from .colab import setup_colab_ollama
 from .core import recommend
 from .snapshot import write_catalog_snapshot
 from .system import format_specs_summary, get_system_specs
@@ -88,6 +89,16 @@ def _cmd_snapshot(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_colab_setup(args: argparse.Namespace) -> int:
+    result = setup_colab_ollama(
+        wait_seconds=args.wait,
+        force_install=args.force_install,
+        log_path=args.log,
+    )
+    print(json.dumps(result, indent=2, ensure_ascii=False))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="ollama-advisor",
@@ -149,6 +160,28 @@ def build_parser() -> argparse.ArgumentParser:
     )
     snap.set_defaults(func=_cmd_snapshot)
 
+    colab = sub.add_parser(
+        "colab-setup",
+        help="Install and start Ollama (Google Colab only)",
+    )
+    colab.add_argument(
+        "--wait",
+        type=float,
+        default=5.0,
+        help="Seconds to wait for server readiness (default: 5)",
+    )
+    colab.add_argument(
+        "--force-install",
+        action="store_true",
+        help="Re-run the Ollama install script",
+    )
+    colab.add_argument(
+        "--log",
+        default="ollama.log",
+        help="Log file for ollama serve (default: ollama.log)",
+    )
+    colab.set_defaults(func=_cmd_colab_setup)
+
     return parser
 
 
@@ -157,7 +190,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         return args.func(args)
-    except ctl.OllamaError as exc:
+    except (ctl.OllamaError, RuntimeError) as exc:
         print(str(exc), file=sys.stderr)
         return 1
 
