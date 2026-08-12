@@ -51,6 +51,7 @@ packages = ["src/ollama_advisor"]
 include = [
     "/src",
     "/tests",
+    "/data",
     "/README.md",
     "/README.ko.md",
     "/LICENSE",
