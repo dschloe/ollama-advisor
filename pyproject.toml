@@ -1,0 +1,60 @@
+# PyPI name: ollama-advisor
+# If ollama-advisor is already taken on PyPI, use: ollama-model-advisor
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ollama-advisor"
+version = "0.1.1"
+description = "Recommend, download, and run Ollama models based on your system specs and use case"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "evanjung" },
+]
+keywords = ["ollama", "llm", "model-recommendation", "gpu", "machine-learning"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "ollama>=0.4.0",
+    "beautifulsoup4>=4.12",
+    "psutil>=5.9",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "build", "twine"]
+
+[project.scripts]
+ollama-advisor = "ollama_advisor.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/dschloe/ollama-advisor"
+Repository = "https://github.com/dschloe/ollama-advisor"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ollama_advisor"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/tests",
+    "/README.md",
+    "/README.ko.md",
+    "/LICENSE",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
