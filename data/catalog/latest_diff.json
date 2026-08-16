@@ -1,12 +1,10 @@
 {
-  "date": "2026-08-15",
+  "date": "2026-08-16",
   "source": "live",
   "model_count": 234,
   "variant_count": 410,
   "diff": {
-    "added": [
-      "qwen3.8"
-    ],
+    "added": [],
     "removed": []
   }
 }
