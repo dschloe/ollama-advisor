@@ -1,0 +1,33 @@
+name: Update Download Stats
+
+on:
+  schedule:
+    - cron: "0 15 * * *"  # midnight KST (UTC+9)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch stats and update READMEs
+        run: python .github/scripts/update_download_stats.py
+
+      - name: Commit and push
+        run: |
+          git diff --quiet && exit 0
+          git add README.md README.ko.md
+          GIT_AUTHOR_NAME="github-actions[bot]" \
+          GIT_AUTHOR_EMAIL="github-actions[bot]@users.noreply.github.com" \
+          GIT_COMMITTER_NAME="github-actions[bot]" \
+          GIT_COMMITTER_EMAIL="github-actions[bot]@users.noreply.github.com" \
+          git commit -m "docs: update daily download stats"
+          git push

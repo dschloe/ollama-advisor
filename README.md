@@ -183,6 +183,14 @@ python -m build
 twine upload dist/*
 ```
 
+## 📦 Download Stats
+
+| Metric | Count |
+|--------|------:|
+| **Today** (2026-08-20) | 9 |
+| **Total (cumulative)** | 1,283 |
+
+> Updated daily via GitHub Actions
 ## License
 
 MIT — see [LICENSE](LICENSE)
