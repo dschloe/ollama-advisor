@@ -7,7 +7,6 @@ on:
       - Daily Catalog Snapshot
       - Publish
       - Test
-      - Test Linear Notify
     types:
       - completed
 
