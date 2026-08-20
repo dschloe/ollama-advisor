@@ -1,10 +1,12 @@
 {
-  "date": "2026-08-19",
+  "date": "2026-08-20",
   "source": "live",
-  "model_count": 234,
-  "variant_count": 410,
+  "model_count": 235,
+  "variant_count": 411,
   "diff": {
-    "added": [],
+    "added": [
+      "ornith-1.5"
+    ],
     "removed": []
   }
 }
