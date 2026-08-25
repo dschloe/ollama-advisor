@@ -149,20 +149,18 @@ CI (`test.yml`) runs on Ubuntu / Windows / macOS with Python 3.9 and 3.11. Netwo
 ### 2. Trusted Publisher (OIDC)
 
 1. PyPI → Account settings → Publishing → Add a new pending publisher
-2. Configure:
-   - **PyPI project name**: `ollama-advisor`
-   - **Owner**: GitHub user or organization
-   - **Repository name**: `ollama-advisor`
-   - **Workflow name**: `publish.yml`
-   - **Environment name**: `pypi` (create a `pypi` environment in GitHub repo Settings → Environments)
+2. Configure (add **two** publishers — PyPI Trusted Publishing does not support reusable workflows):
+   - **Publisher A (manual):** Workflow name `publish.yml`, Environment `pypi`
+   - **Publisher B (auto):** Workflow name `release-on-version.yml`, Environment `pypi`
+   - Shared fields: PyPI project `ollama-advisor`, Owner/Repo `dschloe/ollama-advisor`
 3. Optionally add deployment protection rules under GitHub → Settings → Environments → `pypi`
 
-The workflow in `.github/workflows/publish.yml` uses `pypa/gh-action-pypi-publish` with OIDC—no API token required in CI.
+OIDC publish uses `pypa/gh-action-pypi-publish`—no API token required in CI.
 
 ### 3. Release
 
 **Automatic (preferred):** bump `version` in `pyproject.toml` (and `__version__`), merge to `main`.  
-Workflow `release-on-version.yml` creates tag `vX.Y.Z` + GitHub Release → `publish.yml` uploads to PyPI.
+Workflow `release-on-version.yml` creates tag `vX.Y.Z` + GitHub Release and uploads to PyPI.
 
 **Manual fallback:**
 

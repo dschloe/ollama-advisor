@@ -136,20 +136,18 @@ CI(`test.yml`)는 Ubuntu / Windows / macOS × Python 3.9 / 3.11에서 실행되�
 ### 2. Trusted Publisher (OIDC) 연결
 
 1. PyPI → Account settings → Publishing → Add a new pending publisher
-2. 설정:
-   - **PyPI project name**: `ollama-advisor`
-   - **Owner**: GitHub 사용자/조직
-   - **Repository name**: `ollama-advisor`
-   - **Workflow name**: `publish.yml`
-   - **Environment name**: `pypi` (GitHub repo Settings → Environments에서 `pypi` 환경 생성 권장)
+2. 설정 (**두 개** publisher 등록 — PyPI Trusted Publishing은 reusable workflow를 지원하지 않음):
+   - **Publisher A (수동):** Workflow name `publish.yml`, Environment `pypi`
+   - **Publisher B (자동):** Workflow name `release-on-version.yml`, Environment `pypi`
+   - 공통: PyPI project `ollama-advisor`, Owner/Repo `dschloe/ollama-advisor`
 3. GitHub 저장소 Settings → Environments → `pypi` → Deployment protection rules 설정(선택)
 
-API 토큰 없이 `.github/workflows/publish.yml`의 `pypa/gh-action-pypi-publish`가 OIDC로 배포합니다.
+API 토큰 없이 `pypa/gh-action-pypi-publish`가 OIDC로 배포합니다.
 
 ### 3. 릴리스 발행
 
 **자동(권장):** `pyproject.toml`의 `version`(및 `__version__`)을 올린 뒤 `main`에 merge.  
-`release-on-version.yml`이 `vX.Y.Z` Release를 만들고 → `publish.yml`이 PyPI에 업로드합니다.
+`release-on-version.yml`이 `vX.Y.Z` Release를 만들고 PyPI에 업로드합니다.
 
 **수동:**
 

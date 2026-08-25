@@ -1,8 +1,14 @@
 name: Release on version bump
 
-# When a new version reaches main, create a GitHub Release and call Publish
-# (workflow_call). Note: GITHUB_TOKEN-created releases do NOT trigger
-# `on: release` in other workflows — so we invoke publish.yml directly.
+# When a new version reaches main, create a GitHub Release and publish to PyPI.
+# Publish steps are inlined (not workflow_call) because PyPI Trusted Publishing
+# does not support reusable workflows:
+# https://docs.pypi.org/trusted-publishers/troubleshooting/#reusable-workflows-on-github
+#
+# Register BOTH Trusted Publishers on PyPI:
+# - Workflow: publish.yml          (manual / release / workflow_dispatch)
+# - Workflow: release-on-version.yml (auto on version bump)
+# Environment name for both: pypi
 
 on:
   push:
@@ -63,11 +69,49 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  publish:
+  test:
     needs: release
     if: needs.release.outputs.should_publish == 'true'
-    uses: ./.github/workflows/publish.yml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Run tests
+        run: pytest tests/ -v
+
+  publish:
+    needs: [release, test]
+    if: needs.release.outputs.should_publish == 'true'
+    runs-on: ubuntu-latest
+    environment: pypi
     permissions:
       id-token: write
       contents: read
-    secrets: inherit
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install build
+
+      - name: Build package
+        run: python -m build
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
