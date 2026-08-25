@@ -29,7 +29,13 @@ def is_server_running(timeout: float = 3.0) -> bool:
 
 
 def _ensure_apt_deps() -> list[str]:
-    """Install Colab apt packages required by the Ollama installer (e.g. zstd)."""
+    """Install Colab apt packages required by the Ollama installer (e.g. zstd).
+
+    Colab images often ship extra apt sources (CRAN, r2u, etc.). Those mirrors
+    can fail independently of Ubuntu packages we need. Treat ``apt-get update``
+    failures as soft errors and only fail if the required packages cannot be
+    installed afterward.
+    """
     done: list[str] = []
     missing = [pkg for pkg in APT_DEPS if shutil.which(pkg) is None]
     if not missing:
@@ -41,11 +47,6 @@ def _ensure_apt_deps() -> list[str]:
         text=True,
         check=False,
     )
-    if update.returncode != 0:
-        raise OllamaError(
-            "Failed to apt-get update in Colab (needed for zstd).\n"
-            f"stdout:\n{update.stdout}\nstderr:\n{update.stderr}"
-        )
 
     install = subprocess.run(
         ["sudo", "apt-get", "install", "-y", "-qq", *missing],
@@ -53,11 +54,19 @@ def _ensure_apt_deps() -> list[str]:
         text=True,
         check=False,
     )
-    if install.returncode != 0:
-        raise OllamaError(
-            f"Failed to install apt packages in Colab: {', '.join(missing)}\n"
-            f"stdout:\n{install.stdout}\nstderr:\n{install.stderr}"
-        )
+    still_missing = [pkg for pkg in missing if shutil.which(pkg) is None]
+    if install.returncode != 0 or still_missing:
+        details = [
+            f"Failed to install apt packages in Colab: {', '.join(missing)}",
+            f"still missing: {', '.join(still_missing) if still_missing else '(none)'}",
+            f"apt-get update exit={update.returncode}",
+            f"update stdout:\n{update.stdout}",
+            f"update stderr:\n{update.stderr}",
+            f"install stdout:\n{install.stdout}",
+            f"install stderr:\n{install.stderr}",
+        ]
+        raise OllamaError("\n".join(details))
+
     done.extend(f"apt:{pkg}" for pkg in missing)
     return done
 
