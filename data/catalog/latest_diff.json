@@ -1,10 +1,12 @@
 {
-  "date": "2026-08-25",
+  "date": "2026-08-26",
   "source": "live",
-  "model_count": 235,
-  "variant_count": 413,
+  "model_count": 236,
+  "variant_count": 414,
   "diff": {
-    "added": [],
+    "added": [
+      "granite4.2"
+    ],
     "removed": []
   }
 }
