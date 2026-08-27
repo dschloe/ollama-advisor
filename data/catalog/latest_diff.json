@@ -1,11 +1,12 @@
 {
-  "date": "2026-08-26",
+  "date": "2026-08-27",
   "source": "live",
-  "model_count": 236,
-  "variant_count": 414,
+  "model_count": 238,
+  "variant_count": 416,
   "diff": {
     "added": [
-      "granite4.2"
+      "glm-5.3-flash",
+      "qwen3.8-flash-next"
     ],
     "removed": []
   }
