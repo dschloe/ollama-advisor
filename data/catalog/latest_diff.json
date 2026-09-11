@@ -1,10 +1,12 @@
 {
-  "date": "2026-09-10",
+  "date": "2026-09-11",
   "source": "live",
-  "model_count": 239,
-  "variant_count": 419,
+  "model_count": 240,
+  "variant_count": 420,
   "diff": {
-    "added": [],
+    "added": [
+      "deepseek-v4.1-flash"
+    ],
     "removed": []
   }
 }
