@@ -1,13 +1,10 @@
 {
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "source": "live",
   "model_count": 238,
   "variant_count": 418,
   "diff": {
     "added": [],
-    "removed": [
-      "deepseek-v4-flash",
-      "glm-5.1"
-    ]
+    "removed": []
   }
 }
