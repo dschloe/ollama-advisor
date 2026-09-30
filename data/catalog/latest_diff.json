@@ -1,13 +1,10 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "source": "live",
   "model_count": 240,
-  "variant_count": 421,
+  "variant_count": 420,
   "diff": {
-    "added": [
-      "nimble",
-      "tev1"
-    ],
+    "added": [],
     "removed": []
   }
 }
