@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "source": "live",
   "model_count": 240,
-  "variant_count": 420,
+  "variant_count": 421,
   "diff": {
     "added": [],
     "removed": []
