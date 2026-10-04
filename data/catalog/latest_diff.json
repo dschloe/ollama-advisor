@@ -1,13 +1,10 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "source": "live",
   "model_count": 242,
   "variant_count": 423,
   "diff": {
-    "added": [
-      "clef",
-      "clef-flash"
-    ],
+    "added": [],
     "removed": []
   }
 }
