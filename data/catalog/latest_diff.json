@@ -1,10 +1,14 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "source": "live",
-  "model_count": 242,
-  "variant_count": 423,
+  "model_count": 245,
+  "variant_count": 426,
   "diff": {
-    "added": [],
+    "added": [
+      "embeddinggemma-2",
+      "laya",
+      "mistral-large-4"
+    ],
     "removed": []
   }
 }
