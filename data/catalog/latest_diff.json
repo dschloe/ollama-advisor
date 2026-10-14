@@ -1,14 +1,10 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "source": "live",
   "model_count": 248,
   "variant_count": 429,
   "diff": {
-    "added": [
-      "kev",
-      "nimble-v3",
-      "strands-decider"
-    ],
+    "added": [],
     "removed": []
   }
 }
