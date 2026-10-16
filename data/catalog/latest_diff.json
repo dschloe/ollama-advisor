@@ -1,12 +1,13 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "source": "live",
-  "model_count": 250,
-  "variant_count": 432,
+  "model_count": 253,
+  "variant_count": 435,
   "diff": {
     "added": [
-      "d1",
-      "pplx-decider"
+      "muse-spark-open",
+      "nemotron-3.5-bolt",
+      "nemotron-3.5-super"
     ],
     "removed": []
   }
