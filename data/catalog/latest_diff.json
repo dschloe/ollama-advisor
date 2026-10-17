@@ -1,13 +1,12 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "source": "live",
-  "model_count": 253,
-  "variant_count": 435,
+  "model_count": 255,
+  "variant_count": 437,
   "diff": {
     "added": [
-      "muse-spark-open",
-      "nemotron-3.5-bolt",
-      "nemotron-3.5-super"
+      "beam",
+      "bonsai-2"
     ],
     "removed": []
   }
