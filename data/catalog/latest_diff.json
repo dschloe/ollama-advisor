@@ -1,12 +1,11 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "source": "live",
-  "model_count": 255,
-  "variant_count": 437,
+  "model_count": 256,
+  "variant_count": 441,
   "diff": {
     "added": [
-      "beam",
-      "bonsai-2"
+      "d1-omni"
     ],
     "removed": []
   }
