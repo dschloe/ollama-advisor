@@ -1,12 +1,10 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "source": "live",
   "model_count": 256,
   "variant_count": 441,
   "diff": {
-    "added": [
-      "d1-omni"
-    ],
+    "added": [],
     "removed": []
   }
 }
