@@ -1,12 +1,10 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "source": "live",
   "model_count": 257,
-  "variant_count": 442,
+  "variant_count": 443,
   "diff": {
-    "added": [
-      "minimax-m3.1-flash"
-    ],
+    "added": [],
     "removed": []
   }
 }
