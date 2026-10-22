@@ -1,12 +1,14 @@
 {
-  "fetched_at": "2026-10-21T10:44:43.888326+00:00",
-  "date": "2026-10-21",
+  "fetched_at": "2026-10-22T10:45:39.835250+00:00",
+  "date": "2026-10-22",
   "source": "live",
   "updated": true,
-  "model_count": 257,
-  "variant_count": 443,
+  "model_count": 258,
+  "variant_count": 444,
   "diff": {
-    "added": [],
+    "added": [
+      "flint"
+    ],
     "removed": []
   },
   "models": [
@@ -109,7 +111,7 @@
         "embedding"
       ],
       "param_sizes": [],
-      "pulls": "92M",
+      "pulls": "92.3M",
       "variants": [
         {
           "tag": "nomic-embed-text",
@@ -131,7 +133,7 @@
         "1b",
         "3b"
       ],
-      "pulls": "85.9M",
+      "pulls": "86M",
       "variants": [
         {
           "tag": "llama3.2:1b",
@@ -163,7 +165,7 @@
         "32b",
         "72b"
       ],
-      "pulls": "43.1M",
+      "pulls": "43.2M",
       "variants": [
         {
           "tag": "qwen2.5:0.5b",
@@ -259,7 +261,7 @@
         "32b",
         "235b"
       ],
-      "pulls": "40.9M",
+      "pulls": "41.1M",
       "variants": [
         {
           "tag": "qwen3:0.6b",
@@ -316,7 +318,7 @@
         "9b",
         "27b"
       ],
-      "pulls": "35.3M",
+      "pulls": "35.4M",
       "variants": [
         {
           "tag": "gemma2:2b",
@@ -368,7 +370,7 @@
         "26b",
         "31b"
       ],
-      "pulls": "27.5M",
+      "pulls": "27.6M",
       "variants": [
         {
           "tag": "gemma4:12b",
@@ -400,7 +402,7 @@
         "8b",
         "70b"
       ],
-      "pulls": "25.7M",
+      "pulls": "25.8M",
       "variants": [
         {
           "tag": "llama3:8b",
@@ -434,7 +436,7 @@
         "35b",
         "122b"
       ],
-      "pulls": "23M",
+      "pulls": "23.1M",
       "variants": [
         {
           "tag": "qwen3.5:0.8b",
@@ -561,7 +563,7 @@
       "description": "State-of-the-art large embedding model from mixedbread.ai embedding 335m",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "16M",
+      "pulls": "16.1M",
       "variants": [
         {
           "tag": "mxbai-embed-large",
@@ -619,7 +621,7 @@
         "20b",
         "120b"
       ],
-      "pulls": "14M",
+      "pulls": "14.1M",
       "variants": [
         {
           "tag": "gpt-oss:20b",
@@ -777,7 +779,7 @@
       "description": "BGE-M3 is a new model from BAAI distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. embedding 567m",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "7.8M",
+      "pulls": "7.9M",
       "variants": [
         {
           "tag": "bge-m3",
@@ -1052,7 +1054,7 @@
       "param_sizes": [
         "8b"
       ],
-      "pulls": "5.5M",
+      "pulls": "5.6M",
       "variants": [
         {
           "tag": "minicpm-v:8b",
@@ -1062,35 +1064,6 @@
       ],
       "purposes": [
         "general",
-        "vision"
-      ]
-    },
-    {
-      "identifier": "llama3.2-vision",
-      "description": "Llama 3.2 Vision is a collection of instruction-tuned image reasoning generative models in 11B and 90B sizes.",
-      "capabilities": [
-        "vision"
-      ],
-      "param_sizes": [
-        "11b",
-        "90b"
-      ],
-      "pulls": "5.5M",
-      "variants": [
-        {
-          "tag": "llama3.2-vision:11b",
-          "param_size": "11b",
-          "required_gb": 7.6
-        },
-        {
-          "tag": "llama3.2-vision:90b",
-          "param_size": "90b",
-          "required_gb": 55.0
-        }
-      ],
-      "purposes": [
-        "general",
-        "reasoning",
         "vision"
       ]
     },
@@ -1131,6 +1104,35 @@
       ],
       "purposes": [
         "general",
+        "vision"
+      ]
+    },
+    {
+      "identifier": "llama3.2-vision",
+      "description": "Llama 3.2 Vision is a collection of instruction-tuned image reasoning generative models in 11B and 90B sizes.",
+      "capabilities": [
+        "vision"
+      ],
+      "param_sizes": [
+        "11b",
+        "90b"
+      ],
+      "pulls": "5.5M",
+      "variants": [
+        {
+          "tag": "llama3.2-vision:11b",
+          "param_size": "11b",
+          "required_gb": 7.6
+        },
+        {
+          "tag": "llama3.2-vision:90b",
+          "param_size": "90b",
+          "required_gb": 55.0
+        }
+      ],
+      "purposes": [
+        "general",
+        "reasoning",
         "vision"
       ]
     },
@@ -1177,7 +1179,7 @@
       "param_sizes": [
         "27b"
       ],
-      "pulls": "4.5M",
+      "pulls": "4.6M",
       "variants": [
         {
           "tag": "qwen3.8:27b",
@@ -1203,7 +1205,7 @@
         "4b",
         "8b"
       ],
-      "pulls": "4.3M",
+      "pulls": "4.4M",
       "variants": [
         {
           "tag": "qwen3-embedding:0.6b",
@@ -1400,6 +1402,23 @@
       ]
     },
     {
+      "identifier": "snowflake-arctic-embed",
+      "description": "A suite of text embedding models by Snowflake, optimized for performance. embedding 22m 33m 110m 137m 335m",
+      "capabilities": [],
+      "param_sizes": [],
+      "pulls": "3.2M",
+      "variants": [
+        {
+          "tag": "snowflake-arctic-embed",
+          "param_size": "default",
+          "required_gb": 4.0
+        }
+      ],
+      "purposes": [
+        "embedding"
+      ]
+    },
+    {
       "identifier": "mistral-small",
       "description": "Mistral Small 3 sets a new benchmark in the “small” Large Language Models category below 70B.",
       "capabilities": [
@@ -1424,23 +1443,6 @@
       ],
       "purposes": [
         "general"
-      ]
-    },
-    {
-      "identifier": "snowflake-arctic-embed",
-      "description": "A suite of text embedding models by Snowflake, optimized for performance. embedding 22m 33m 110m 137m 335m",
-      "capabilities": [],
-      "param_sizes": [],
-      "pulls": "3.2M",
-      "variants": [
-        {
-          "tag": "snowflake-arctic-embed",
-          "param_size": "default",
-          "required_gb": 4.0
-        }
-      ],
-      "purposes": [
-        "embedding"
       ]
     },
     {
@@ -1970,6 +1972,30 @@
       ]
     },
     {
+      "identifier": "devstral-small-2",
+      "description": "24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
+      "capabilities": [
+        "vision",
+        "tools"
+      ],
+      "param_sizes": [
+        "24b"
+      ],
+      "pulls": "2.1M",
+      "variants": [
+        {
+          "tag": "devstral-small-2:24b",
+          "param_size": "24b",
+          "required_gb": 15.4
+        }
+      ],
+      "purposes": [
+        "coding",
+        "general",
+        "vision"
+      ]
+    },
+    {
       "identifier": "moondream",
       "description": "moondream2 is a small vision language model designed to run efficiently on edge devices.",
       "capabilities": [
@@ -1987,30 +2013,6 @@
         }
       ],
       "purposes": [
-        "general",
-        "vision"
-      ]
-    },
-    {
-      "identifier": "devstral-small-2",
-      "description": "24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
-      "capabilities": [
-        "vision",
-        "tools"
-      ],
-      "param_sizes": [
-        "24b"
-      ],
-      "pulls": "2M",
-      "variants": [
-        {
-          "tag": "devstral-small-2:24b",
-          "param_size": "24b",
-          "required_gb": 15.4
-        }
-      ],
-      "purposes": [
-        "coding",
         "general",
         "vision"
       ]
@@ -2245,6 +2247,26 @@
       ]
     },
     {
+      "identifier": "wizardcoder",
+      "description": "State-of-the-art code generation model",
+      "capabilities": [],
+      "param_sizes": [
+        "33b"
+      ],
+      "pulls": "1.6M",
+      "variants": [
+        {
+          "tag": "wizardcoder:33b",
+          "param_size": "33b",
+          "required_gb": 20.8
+        }
+      ],
+      "purposes": [
+        "coding",
+        "general"
+      ]
+    },
+    {
       "identifier": "command-r",
       "description": "Command R is a Large Language Model optimized for conversational interaction and long context tasks.",
       "capabilities": [
@@ -2283,26 +2305,6 @@
       "purposes": [
         "general",
         "reasoning"
-      ]
-    },
-    {
-      "identifier": "wizardcoder",
-      "description": "State-of-the-art code generation model",
-      "capabilities": [],
-      "param_sizes": [
-        "33b"
-      ],
-      "pulls": "1.6M",
-      "variants": [
-        {
-          "tag": "wizardcoder:33b",
-          "param_size": "33b",
-          "required_gb": 20.8
-        }
-      ],
-      "purposes": [
-        "coding",
-        "general"
       ]
     },
     {
@@ -2997,32 +2999,6 @@
       ]
     },
     {
-      "identifier": "nous-hermes2",
-      "description": "The powerful family of models by Nous Research that excels at scientific discussion and coding tasks.",
-      "capabilities": [],
-      "param_sizes": [
-        "10.7b",
-        "34b"
-      ],
-      "pulls": "1.1M",
-      "variants": [
-        {
-          "tag": "nous-hermes2:10.7b",
-          "param_size": "10.7b",
-          "required_gb": 7.42
-        },
-        {
-          "tag": "nous-hermes2:34b",
-          "param_size": "34b",
-          "required_gb": 21.4
-        }
-      ],
-      "purposes": [
-        "coding",
-        "general"
-      ]
-    },
-    {
       "identifier": "yi-coder",
       "description": "Yi-Coder is a series of open-source code language models that delivers state-of-the-art coding performance with fewer than 10 billion parameters.",
       "capabilities": [],
@@ -3041,6 +3017,32 @@
           "tag": "yi-coder:9b",
           "param_size": "9b",
           "required_gb": 6.4
+        }
+      ],
+      "purposes": [
+        "coding",
+        "general"
+      ]
+    },
+    {
+      "identifier": "nous-hermes2",
+      "description": "The powerful family of models by Nous Research that excels at scientific discussion and coding tasks.",
+      "capabilities": [],
+      "param_sizes": [
+        "10.7b",
+        "34b"
+      ],
+      "pulls": "1.1M",
+      "variants": [
+        {
+          "tag": "nous-hermes2:10.7b",
+          "param_size": "10.7b",
+          "required_gb": 7.42
+        },
+        {
+          "tag": "nous-hermes2:34b",
+          "param_size": "34b",
+          "required_gb": 21.4
         }
       ],
       "purposes": [
@@ -3169,28 +3171,6 @@
       ]
     },
     {
-      "identifier": "devstral",
-      "description": "Devstral: the best open source model for coding agents",
-      "capabilities": [
-        "tools"
-      ],
-      "param_sizes": [
-        "24b"
-      ],
-      "pulls": "1.1M",
-      "variants": [
-        {
-          "tag": "devstral:24b",
-          "param_size": "24b",
-          "required_gb": 15.4
-        }
-      ],
-      "purposes": [
-        "coding",
-        "general"
-      ]
-    },
-    {
       "identifier": "internlm2",
       "description": "InternLM2.5 is a 7B parameter model tailored for practical scenarios with outstanding reasoning capability. 1m",
       "capabilities": [],
@@ -3223,6 +3203,28 @@
       ]
     },
     {
+      "identifier": "devstral",
+      "description": "Devstral: the best open source model for coding agents",
+      "capabilities": [
+        "tools"
+      ],
+      "param_sizes": [
+        "24b"
+      ],
+      "pulls": "1.1M",
+      "variants": [
+        {
+          "tag": "devstral:24b",
+          "param_size": "24b",
+          "required_gb": 15.4
+        }
+      ],
+      "purposes": [
+        "coding",
+        "general"
+      ]
+    },
+    {
       "identifier": "granite3.1-dense",
       "description": "The IBM Granite 2B and 8B models are text-only dense LLMs trained on over 12 trillion tokens of data, demonstrated significant improvements over their predecessors in performance and speed in IBM’s initial testing.",
       "capabilities": [
@@ -3243,6 +3245,25 @@
           "tag": "granite3.1-dense:8b",
           "param_size": "8b",
           "required_gb": 5.8
+        }
+      ],
+      "purposes": [
+        "general"
+      ]
+    },
+    {
+      "identifier": "mistral-openorca",
+      "description": "Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset.",
+      "capabilities": [],
+      "param_sizes": [
+        "7b"
+      ],
+      "pulls": "1.1M",
+      "variants": [
+        {
+          "tag": "mistral-openorca:7b",
+          "param_size": "7b",
+          "required_gb": 5.2
         }
       ],
       "purposes": [
@@ -3374,44 +3395,6 @@
       ]
     },
     {
-      "identifier": "mistral-openorca",
-      "description": "Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset.",
-      "capabilities": [],
-      "param_sizes": [
-        "7b"
-      ],
-      "pulls": "1.1M",
-      "variants": [
-        {
-          "tag": "mistral-openorca:7b",
-          "param_size": "7b",
-          "required_gb": 5.2
-        }
-      ],
-      "purposes": [
-        "general"
-      ]
-    },
-    {
-      "identifier": "samantha-mistral",
-      "description": "A companion assistant trained in philosophy, psychology, and personal relationships. Based on Mistral.",
-      "capabilities": [],
-      "param_sizes": [
-        "7b"
-      ],
-      "pulls": "1M",
-      "variants": [
-        {
-          "tag": "samantha-mistral:7b",
-          "param_size": "7b",
-          "required_gb": 5.2
-        }
-      ],
-      "purposes": [
-        "general"
-      ]
-    },
-    {
       "identifier": "dolphincoder",
       "description": "A 7B and 15B uncensored variant of the Dolphin model family that excels at coding, based on StarCoder2.",
       "capabilities": [],
@@ -3434,6 +3417,25 @@
       ],
       "purposes": [
         "coding",
+        "general"
+      ]
+    },
+    {
+      "identifier": "samantha-mistral",
+      "description": "A companion assistant trained in philosophy, psychology, and personal relationships. Based on Mistral.",
+      "capabilities": [],
+      "param_sizes": [
+        "7b"
+      ],
+      "pulls": "1M",
+      "variants": [
+        {
+          "tag": "samantha-mistral:7b",
+          "param_size": "7b",
+          "required_gb": 5.2
+        }
+      ],
+      "purposes": [
         "general"
       ]
     },
@@ -3583,7 +3585,7 @@
       "param_sizes": [
         "10.7b"
       ],
-      "pulls": "994.1K",
+      "pulls": "994.7K",
       "variants": [
         {
           "tag": "solar:10.7b",
@@ -3605,7 +3607,7 @@
         "1b",
         "3b"
       ],
-      "pulls": "984.1K",
+      "pulls": "984.9K",
       "variants": [
         {
           "tag": "granite3-moe:1b",
@@ -3631,7 +3633,7 @@
         "13b",
         "70b"
       ],
-      "pulls": "982.2K",
+      "pulls": "983K",
       "variants": [
         {
           "tag": "stable-beluga:7b",
@@ -3662,7 +3664,7 @@
         "9b",
         "27b"
       ],
-      "pulls": "973.3K",
+      "pulls": "974.1K",
       "variants": [
         {
           "tag": "shieldgemma:2b",
@@ -3692,7 +3694,7 @@
         "7b",
         "13b"
       ],
-      "pulls": "967K",
+      "pulls": "967.7K",
       "variants": [
         {
           "tag": "orca2:7b",
@@ -3718,7 +3720,7 @@
         "1.5b",
         "14b"
       ],
-      "pulls": "966.3K",
+      "pulls": "966.8K",
       "variants": [
         {
           "tag": "deepcoder:1.5b",
@@ -3742,7 +3744,7 @@
       "description": "General use model based on Llama 2.",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "961.1K",
+      "pulls": "962.2K",
       "variants": [
         {
           "tag": "wizardlm",
@@ -3762,7 +3764,7 @@
         "0.5b",
         "1.5b"
       ],
-      "pulls": "957.8K",
+      "pulls": "958.4K",
       "variants": [
         {
           "tag": "reader-lm:0.5b",
@@ -3784,7 +3786,7 @@
       "description": "Sentence-transformers model that can be used for tasks like clustering or semantic search. embedding 278m",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "951.9K",
+      "pulls": "952.4K",
       "variants": [
         {
           "tag": "paraphrase-multilingual",
@@ -3801,7 +3803,7 @@
       "description": "An expansion of Llama 2 that specializes in integrating both general language understanding and domain-specific knowledge, particularly in programming and mathematics.",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "939.9K",
+      "pulls": "940.6K",
       "variants": [
         {
           "tag": "llama-pro",
@@ -3825,7 +3827,7 @@
         "4b",
         "30b"
       ],
-      "pulls": "930.8K",
+      "pulls": "934K",
       "variants": [
         {
           "tag": "nemotron-3-nano:4b",
@@ -3850,7 +3852,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "929.9K",
+      "pulls": "930.5K",
       "variants": [
         {
           "tag": "yarn-mistral:7b",
@@ -3869,7 +3871,7 @@
       "param_sizes": [
         "13b"
       ],
-      "pulls": "923.4K",
+      "pulls": "924K",
       "variants": [
         {
           "tag": "nexusraven:13b",
@@ -3889,7 +3891,7 @@
         "7b",
         "70b"
       ],
-      "pulls": "917.7K",
+      "pulls": "918.2K",
       "variants": [
         {
           "tag": "meditron:7b",
@@ -3915,7 +3917,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "906.3K",
+      "pulls": "907.1K",
       "variants": [
         {
           "tag": "bakllava:7b",
@@ -3937,7 +3939,7 @@
       "param_sizes": [
         "104b"
       ],
-      "pulls": "824.2K",
+      "pulls": "825K",
       "variants": [
         {
           "tag": "command-r-plus:104b",
@@ -3959,7 +3961,7 @@
       "param_sizes": [
         "24b"
       ],
-      "pulls": "803K",
+      "pulls": "803.3K",
       "variants": [
         {
           "tag": "mistral-small3.1:24b",
@@ -3981,7 +3983,7 @@
         "7.8b",
         "32b"
       ],
-      "pulls": "782.8K",
+      "pulls": "783.3K",
       "variants": [
         {
           "tag": "exaone-deep:2.4b",
@@ -4006,13 +4008,35 @@
       ]
     },
     {
+      "identifier": "llava-phi3",
+      "description": "A new small LLaVA model fine-tuned from Phi 3 Mini.",
+      "capabilities": [
+        "vision"
+      ],
+      "param_sizes": [
+        "3.8b"
+      ],
+      "pulls": "750.6K",
+      "variants": [
+        {
+          "tag": "llava-phi3:3.8b",
+          "param_size": "3.8b",
+          "required_gb": 3.28
+        }
+      ],
+      "purposes": [
+        "general",
+        "vision"
+      ]
+    },
+    {
       "identifier": "tinydolphin",
       "description": "An experimental 1.1B parameter model trained on the new Dolphin 2.8 dataset by Eric Hartford and based on TinyLlama.",
       "capabilities": [],
       "param_sizes": [
         "1.1b"
       ],
-      "pulls": "744.9K",
+      "pulls": "745.4K",
       "variants": [
         {
           "tag": "tinydolphin:1.1b",
@@ -4031,7 +4055,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "744.7K",
+      "pulls": "745K",
       "variants": [
         {
           "tag": "medllama2:7b",
@@ -4053,7 +4077,7 @@
       "param_sizes": [
         "671b"
       ],
-      "pulls": "739.4K",
+      "pulls": "739.9K",
       "variants": [
         {
           "tag": "deepseek-v3.1:671b",
@@ -4067,28 +4091,6 @@
       ]
     },
     {
-      "identifier": "llava-phi3",
-      "description": "A new small LLaVA model fine-tuned from Phi 3 Mini.",
-      "capabilities": [
-        "vision"
-      ],
-      "param_sizes": [
-        "3.8b"
-      ],
-      "pulls": "735.7K",
-      "variants": [
-        {
-          "tag": "llava-phi3:3.8b",
-          "param_size": "3.8b",
-          "required_gb": 3.28
-        }
-      ],
-      "purposes": [
-        "general",
-        "vision"
-      ]
-    },
-    {
       "identifier": "nemotron-mini",
       "description": "A commercial-friendly small language model by NVIDIA optimized for roleplay, RAG QA, and function calling.",
       "capabilities": [
@@ -4097,7 +4099,7 @@
       "param_sizes": [
         "4b"
       ],
-      "pulls": "731.7K",
+      "pulls": "732.3K",
       "variants": [
         {
           "tag": "nemotron-mini:4b",
@@ -4116,7 +4118,7 @@
       "param_sizes": [
         "9b"
       ],
-      "pulls": "707.9K",
+      "pulls": "708.3K",
       "variants": [
         {
           "tag": "codegeex4:9b",
@@ -4141,7 +4143,7 @@
       "param_sizes": [
         "33b"
       ],
-      "pulls": "687K",
+      "pulls": "688.3K",
       "variants": [
         {
           "tag": "nemotron3:33b",
@@ -4164,7 +4166,7 @@
         "1.5b",
         "8b"
       ],
-      "pulls": "671.4K",
+      "pulls": "672.1K",
       "variants": [
         {
           "tag": "opencoder:1.5b",
@@ -4189,7 +4191,7 @@
       "param_sizes": [
         "13b"
       ],
-      "pulls": "663.6K",
+      "pulls": "664K",
       "variants": [
         {
           "tag": "wizardlm-uncensored:13b",
@@ -4212,7 +4214,7 @@
         "9b",
         "35b"
       ],
-      "pulls": "654.2K",
+      "pulls": "657.8K",
       "variants": [
         {
           "tag": "ornith:9b",
@@ -4240,7 +4242,7 @@
       "param_sizes": [
         "70b"
       ],
-      "pulls": "641.8K",
+      "pulls": "642.2K",
       "variants": [
         {
           "tag": "nemotron:70b",
@@ -4259,7 +4261,7 @@
       "param_sizes": [
         "70b"
       ],
-      "pulls": "632K",
+      "pulls": "632.4K",
       "variants": [
         {
           "tag": "reflection:70b",
@@ -4279,7 +4281,7 @@
       "param_sizes": [
         "13b"
       ],
-      "pulls": "612.4K",
+      "pulls": "612.8K",
       "variants": [
         {
           "tag": "codeup:13b",
@@ -4299,7 +4301,7 @@
       "param_sizes": [
         "8x7b"
       ],
-      "pulls": "607.1K",
+      "pulls": "607.5K",
       "variants": [
         {
           "tag": "nous-hermes2-mixtral:8x7b",
@@ -4320,7 +4322,7 @@
       "param_sizes": [
         "72b"
       ],
-      "pulls": "606.6K",
+      "pulls": "607K",
       "variants": [
         {
           "tag": "athene-v2:72b",
@@ -4343,7 +4345,7 @@
       "param_sizes": [
         "80b"
       ],
-      "pulls": "603.9K",
+      "pulls": "604.3K",
       "variants": [
         {
           "tag": "qwen3-next:80b",
@@ -4363,7 +4365,7 @@
       "param_sizes": [
         "120b"
       ],
-      "pulls": "585.4K",
+      "pulls": "585.8K",
       "variants": [
         {
           "tag": "megadolphin:120b",
@@ -4382,7 +4384,7 @@
       "param_sizes": [
         "13b"
       ],
-      "pulls": "584.4K",
+      "pulls": "584.8K",
       "variants": [
         {
           "tag": "everythinglm:13b",
@@ -4403,7 +4405,7 @@
         "7.8b",
         "32b"
       ],
-      "pulls": "583.2K",
+      "pulls": "584K",
       "variants": [
         {
           "tag": "exaone3.5:2.4b",
@@ -4432,7 +4434,7 @@
       "param_sizes": [
         "22b"
       ],
-      "pulls": "575.8K",
+      "pulls": "576.2K",
       "variants": [
         {
           "tag": "solar-pro:22b",
@@ -4451,7 +4453,7 @@
       "param_sizes": [
         "3.8b"
       ],
-      "pulls": "572.6K",
+      "pulls": "573.2K",
       "variants": [
         {
           "tag": "nuextract:3.8b",
@@ -4470,7 +4472,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "572.4K",
+      "pulls": "572.8K",
       "variants": [
         {
           "tag": "magicoder:7b",
@@ -4490,7 +4492,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "566.6K",
+      "pulls": "567K",
       "variants": [
         {
           "tag": "mathstral:7b",
@@ -4514,7 +4516,7 @@
         "8b",
         "30b"
       ],
-      "pulls": "564.6K",
+      "pulls": "566.8K",
       "variants": [
         {
           "tag": "granite4.1:3b",
@@ -4546,7 +4548,7 @@
       "param_sizes": [
         "3b"
       ],
-      "pulls": "559.7K",
+      "pulls": "561K",
       "variants": [
         {
           "tag": "deepseek-ocr:3b",
@@ -4566,7 +4568,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "556.3K",
+      "pulls": "556.7K",
       "variants": [
         {
           "tag": "notus:7b",
@@ -4585,7 +4587,7 @@
       "param_sizes": [
         "11b"
       ],
-      "pulls": "556.3K",
+      "pulls": "556.6K",
       "variants": [
         {
           "tag": "falcon2:11b",
@@ -4604,7 +4606,7 @@
       "param_sizes": [
         "8x7b"
       ],
-      "pulls": "554.9K",
+      "pulls": "555.3K",
       "variants": [
         {
           "tag": "notux:8x7b",
@@ -4623,7 +4625,7 @@
       "param_sizes": [
         "3b"
       ],
-      "pulls": "548.7K",
+      "pulls": "549.1K",
       "variants": [
         {
           "tag": "stablelm-zephyr:3b",
@@ -4642,7 +4644,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "546.4K",
+      "pulls": "546.8K",
       "variants": [
         {
           "tag": "bespoke-minicheck:7b",
@@ -4661,7 +4663,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "543.5K",
+      "pulls": "543.9K",
       "variants": [
         {
           "tag": "duckdb-nsql:7b",
@@ -4683,7 +4685,7 @@
       "param_sizes": [
         "70b"
       ],
-      "pulls": "540.4K",
+      "pulls": "540.7K",
       "variants": [
         {
           "tag": "firefunction-v2:70b",
@@ -4702,7 +4704,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "539.4K",
+      "pulls": "539.8K",
       "variants": [
         {
           "tag": "mistrallite:7b",
@@ -4721,7 +4723,7 @@
       "param_sizes": [
         "13b"
       ],
-      "pulls": "533.2K",
+      "pulls": "533.6K",
       "variants": [
         {
           "tag": "wizard-vicuna:13b",
@@ -4743,7 +4745,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "526K",
+      "pulls": "526.4K",
       "variants": [
         {
           "tag": "minimax-m3",
@@ -4765,7 +4767,7 @@
       "param_sizes": [
         "13b"
       ],
-      "pulls": "525.3K",
+      "pulls": "525.6K",
       "variants": [
         {
           "tag": "open-orca-platypus2:13b",
@@ -4787,7 +4789,7 @@
       "param_sizes": [
         "8b"
       ],
-      "pulls": "517.9K",
+      "pulls": "518.2K",
       "variants": [
         {
           "tag": "rnj-1:8b",
@@ -4807,7 +4809,7 @@
       "param_sizes": [
         "34b"
       ],
-      "pulls": "516.8K",
+      "pulls": "517.4K",
       "variants": [
         {
           "tag": "codebooga:34b",
@@ -4830,7 +4832,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "494.8K",
+      "pulls": "495.4K",
       "variants": [
         {
           "tag": "kimi-k2.6",
@@ -4850,7 +4852,7 @@
       "description": "A language model created by combining two fine-tuned Llama 2 70B models into one.",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "494.8K",
+      "pulls": "495.1K",
       "variants": [
         {
           "tag": "goliath",
@@ -4873,7 +4875,7 @@
         "7b",
         "32b"
       ],
-      "pulls": "473.6K",
+      "pulls": "474.1K",
       "variants": [
         {
           "tag": "olmo-3:7b",
@@ -4896,7 +4898,7 @@
       "description": "Snowflake's frontier embedding model. Arctic Embed 2.0 adds multilingual support without sacrificing English performance or scalability. embedding 568m",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "473.3K",
+      "pulls": "474.1K",
       "variants": [
         {
           "tag": "snowflake-arctic-embed2",
@@ -4918,7 +4920,7 @@
         "2b",
         "8b"
       ],
-      "pulls": "468K",
+      "pulls": "468.3K",
       "variants": [
         {
           "tag": "granite3.2:2b",
@@ -4944,7 +4946,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "464.8K",
+      "pulls": "466.1K",
       "variants": [
         {
           "tag": "deepseek-v4-pro",
@@ -4967,7 +4969,7 @@
         "4b",
         "27b"
       ],
-      "pulls": "458.1K",
+      "pulls": "459.2K",
       "variants": [
         {
           "tag": "medgemma:4b",
@@ -4996,7 +4998,7 @@
       "param_sizes": [
         "128b"
       ],
-      "pulls": "432.6K",
+      "pulls": "432.9K",
       "variants": [
         {
           "tag": "mistral-medium-3.5:128b",
@@ -5019,7 +5021,7 @@
         "70b",
         "671b"
       ],
-      "pulls": "432K",
+      "pulls": "432.2K",
       "variants": [
         {
           "tag": "r1-1776:70b",
@@ -5046,7 +5048,7 @@
         "8b",
         "20b"
       ],
-      "pulls": "427.9K",
+      "pulls": "428.2K",
       "variants": [
         {
           "tag": "sailor2:1b",
@@ -5076,7 +5078,7 @@
         "8b",
         "70b"
       ],
-      "pulls": "413.9K",
+      "pulls": "414.3K",
       "variants": [
         {
           "tag": "tulu3:8b",
@@ -5108,7 +5110,7 @@
         "122b",
         "397b"
       ],
-      "pulls": "409.9K",
+      "pulls": "413.4K",
       "variants": [
         {
           "tag": "ornith-1.5:9b",
@@ -5142,7 +5144,7 @@
       "description": "The IBM Granite Embedding 30M and 278M models models are text-only dense biencoder embedding models, with 30M available in English only and 278M serving multilingual use cases. embedding 30m 278m",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "396.6K",
+      "pulls": "397.7K",
       "variants": [
         {
           "tag": "granite-embedding",
@@ -5163,7 +5165,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "377K",
+      "pulls": "377.3K",
       "variants": [
         {
           "tag": "glm-5.2",
@@ -5183,7 +5185,7 @@
       "param_sizes": [
         "132b"
       ],
-      "pulls": "376K",
+      "pulls": "376.4K",
       "variants": [
         {
           "tag": "dbrx:132b",
@@ -5204,7 +5206,7 @@
       "param_sizes": [
         "123b"
       ],
-      "pulls": "366.8K",
+      "pulls": "367.3K",
       "variants": [
         {
           "tag": "devstral-2:123b",
@@ -5225,7 +5227,7 @@
         "2b",
         "8b"
       ],
-      "pulls": "348.7K",
+      "pulls": "349K",
       "variants": [
         {
           "tag": "granite3-guardian:2b",
@@ -5251,7 +5253,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "340.1K",
+      "pulls": "340.6K",
       "variants": [
         {
           "tag": "command-r7b:7b",
@@ -5270,7 +5272,7 @@
       "param_sizes": [
         "3.8b"
       ],
-      "pulls": "321.6K",
+      "pulls": "321.9K",
       "variants": [
         {
           "tag": "phi4-mini-reasoning:3.8b",
@@ -5294,7 +5296,7 @@
       "param_sizes": [
         "30b"
       ],
-      "pulls": "317.3K",
+      "pulls": "319.9K",
       "variants": [
         {
           "tag": "muse-glimmer:30b",
@@ -5318,7 +5320,7 @@
       "param_sizes": [
         "32b"
       ],
-      "pulls": "310.9K",
+      "pulls": "311.2K",
       "variants": [
         {
           "tag": "olmo-3.1:32b",
@@ -5338,7 +5340,7 @@
       "param_sizes": [
         "40b"
       ],
-      "pulls": "305.3K",
+      "pulls": "307.3K",
       "variants": [
         {
           "tag": "alfred:40b",
@@ -5357,7 +5359,7 @@
       "param_sizes": [
         "236b"
       ],
-      "pulls": "299.2K",
+      "pulls": "299.6K",
       "variants": [
         {
           "tag": "deepseek-v2.5:236b",
@@ -5375,7 +5377,7 @@
       "description": "Embedding model from BAAI mapping texts to vectors. embedding 335m",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "294.3K",
+      "pulls": "294.8K",
       "variants": [
         {
           "tag": "bge-large",
@@ -5394,7 +5396,7 @@
       "param_sizes": [
         "3b"
       ],
-      "pulls": "267K",
+      "pulls": "267.2K",
       "variants": [
         {
           "tag": "smallthinker:3b",
@@ -5418,7 +5420,7 @@
         "8b",
         "24b"
       ],
-      "pulls": "258.8K",
+      "pulls": "261.8K",
       "variants": [
         {
           "tag": "lfm2.5:8b",
@@ -5437,6 +5439,29 @@
       ]
     },
     {
+      "identifier": "nemotron-3.5-lightning",
+      "description": "NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.",
+      "capabilities": [
+        "tools",
+        "thinking"
+      ],
+      "param_sizes": [
+        "30b"
+      ],
+      "pulls": "254.2K",
+      "variants": [
+        {
+          "tag": "nemotron-3.5-lightning:30b",
+          "param_size": "30b",
+          "required_gb": 19.0
+        }
+      ],
+      "purposes": [
+        "general",
+        "reasoning"
+      ]
+    },
+    {
       "identifier": "kimi-k2.7-code",
       "description": "Kimi K2.7 Code is Moonshot AI's coding-focused agentic model built upon Kimi K2.6, with substantial improvements on real-world long-horizon coding tasks and roughly 30% lower thinking-token usage.",
       "capabilities": [
@@ -5446,7 +5471,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "252.8K",
+      "pulls": "253.2K",
       "variants": [
         {
           "tag": "kimi-k2.7-code",
@@ -5462,29 +5487,6 @@
       ]
     },
     {
-      "identifier": "nemotron-3.5-lightning",
-      "description": "NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.",
-      "capabilities": [
-        "tools",
-        "thinking"
-      ],
-      "param_sizes": [
-        "30b"
-      ],
-      "pulls": "251.5K",
-      "variants": [
-        {
-          "tag": "nemotron-3.5-lightning:30b",
-          "param_size": "30b",
-          "required_gb": 19.0
-        }
-      ],
-      "purposes": [
-        "general",
-        "reasoning"
-      ]
-    },
-    {
       "identifier": "command-a",
       "description": "111 billion parameter model optimized for demanding enterprises that require fast, secure, and high-quality AI",
       "capabilities": [
@@ -5493,7 +5495,7 @@
       "param_sizes": [
         "111b"
       ],
-      "pulls": "236.9K",
+      "pulls": "237.3K",
       "variants": [
         {
           "tag": "command-a:111b",
@@ -5512,7 +5514,7 @@
       "param_sizes": [
         "671b"
       ],
-      "pulls": "229.7K",
+      "pulls": "230.1K",
       "variants": [
         {
           "tag": "cogito-2.1:671b",
@@ -5531,7 +5533,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "219.6K",
+      "pulls": "219.8K",
       "variants": [
         {
           "tag": "marco-o1:7b",
@@ -5553,7 +5555,7 @@
       "param_sizes": [
         "4b"
       ],
-      "pulls": "214.6K",
+      "pulls": "214.9K",
       "variants": [
         {
           "tag": "medgemma1.5:4b",
@@ -5575,7 +5577,7 @@
       "param_sizes": [
         "7b"
       ],
-      "pulls": "210.9K",
+      "pulls": "211K",
       "variants": [
         {
           "tag": "command-r7b-arabic:7b",
@@ -5596,7 +5598,7 @@
         "thinking"
       ],
       "param_sizes": [],
-      "pulls": "203.5K",
+      "pulls": "210.4K",
       "variants": [
         {
           "tag": "qwen3.8-flash-next",
@@ -5615,7 +5617,7 @@
       "description": "FunctionGemma is a specialized version of Google's Gemma 3 270M model fine-tuned explicitly for function calling. tools 270m",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "203.3K",
+      "pulls": "203.7K",
       "variants": [
         {
           "tag": "functiongemma",
@@ -5637,7 +5639,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "190.6K",
+      "pulls": "192.5K",
       "variants": [
         {
           "tag": "glm-5.3-flash",
@@ -5660,41 +5662,12 @@
         "thinking"
       ],
       "param_sizes": [],
-      "pulls": "178.6K",
+      "pulls": "179.2K",
       "variants": [
         {
           "tag": "laguna-s-2.1",
           "param_size": "default",
           "required_gb": 4.0
-        }
-      ],
-      "purposes": [
-        "general",
-        "reasoning"
-      ]
-    },
-    {
-      "identifier": "gpt-oss-safeguard",
-      "description": "gpt-oss-safeguard-20b and gpt-oss-safeguard-120b are safety reasoning models built-upon gpt-oss",
-      "capabilities": [
-        "tools",
-        "thinking"
-      ],
-      "param_sizes": [
-        "20b",
-        "120b"
-      ],
-      "pulls": "168.1K",
-      "variants": [
-        {
-          "tag": "gpt-oss-safeguard:20b",
-          "param_size": "20b",
-          "required_gb": 13.0
-        },
-        {
-          "tag": "gpt-oss-safeguard:120b",
-          "param_size": "120b",
-          "required_gb": 73.0
         }
       ],
       "purposes": [
@@ -5711,7 +5684,7 @@
         "8b",
         "30b"
       ],
-      "pulls": "167.5K",
+      "pulls": "171K",
       "variants": [
         {
           "tag": "granite4.2:3b",
@@ -5735,6 +5708,35 @@
       ]
     },
     {
+      "identifier": "gpt-oss-safeguard",
+      "description": "gpt-oss-safeguard-20b and gpt-oss-safeguard-120b are safety reasoning models built-upon gpt-oss",
+      "capabilities": [
+        "tools",
+        "thinking"
+      ],
+      "param_sizes": [
+        "20b",
+        "120b"
+      ],
+      "pulls": "168.5K",
+      "variants": [
+        {
+          "tag": "gpt-oss-safeguard:20b",
+          "param_size": "20b",
+          "required_gb": 13.0
+        },
+        {
+          "tag": "gpt-oss-safeguard:120b",
+          "param_size": "120b",
+          "required_gb": 73.0
+        }
+      ],
+      "purposes": [
+        "general",
+        "reasoning"
+      ]
+    },
+    {
       "identifier": "deepseek-v4.1-flash",
       "description": "Designed for greater capability, faster inference, higher throughput, and scaling to larger models.",
       "capabilities": [
@@ -5744,7 +5746,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "160.8K",
+      "pulls": "163.9K",
       "variants": [
         {
           "tag": "deepseek-v4.1-flash",
@@ -5768,7 +5770,7 @@
       "param_sizes": [
         "30b"
       ],
-      "pulls": "156.6K",
+      "pulls": "157K",
       "variants": [
         {
           "tag": "nemotron-cascade-2:30b",
@@ -5790,7 +5792,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "141.4K",
+      "pulls": "142.2K",
       "variants": [
         {
           "tag": "mistral-large-3",
@@ -5811,7 +5813,7 @@
         "thinking"
       ],
       "param_sizes": [],
-      "pulls": "138.7K",
+      "pulls": "139.7K",
       "variants": [
         {
           "tag": "laguna-xs-2.1",
@@ -5834,7 +5836,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "132.5K",
+      "pulls": "133.9K",
       "variants": [
         {
           "tag": "nemotron-3-ultra",
@@ -5856,7 +5858,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "116.8K",
+      "pulls": "124.3K",
       "variants": [
         {
           "tag": "glm-5.3",
@@ -5880,7 +5882,7 @@
         "0.8b",
         "4b"
       ],
-      "pulls": "107.3K",
+      "pulls": "109.8K",
       "variants": [
         {
           "tag": "tev1:0.8b",
@@ -5908,7 +5910,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "107.2K",
+      "pulls": "107.7K",
       "variants": [
         {
           "tag": "kimi-k3",
@@ -5930,7 +5932,7 @@
         "thinking"
       ],
       "param_sizes": [],
-      "pulls": "77K",
+      "pulls": "78K",
       "variants": [
         {
           "tag": "north-mini-code-1.0",
@@ -5945,6 +5947,23 @@
       ]
     },
     {
+      "identifier": "embeddinggemma-2",
+      "description": "EmbeddingGemma 2 is a multimodal embedding model from Google built on the Gemma 4 architecture. vision embedding audio 270m 440m 570m 740m",
+      "capabilities": [],
+      "param_sizes": [],
+      "pulls": "75.7K",
+      "variants": [
+        {
+          "tag": "embeddinggemma-2",
+          "param_size": "default",
+          "required_gb": 4.0
+        }
+      ],
+      "purposes": [
+        "embedding"
+      ]
+    },
+    {
       "identifier": "minicpm-v4.6",
       "description": "A Pocket-Sized MLLM for Ultra-Efficient Image and Video Understanding on Your Phone",
       "capabilities": [
@@ -5953,7 +5972,7 @@
       "param_sizes": [
         "1b"
       ],
-      "pulls": "74.4K",
+      "pulls": "75.3K",
       "variants": [
         {
           "tag": "minicpm-v4.6:1b",
@@ -5967,23 +5986,6 @@
       ]
     },
     {
-      "identifier": "embeddinggemma-2",
-      "description": "EmbeddingGemma 2 is a multimodal embedding model from Google built on the Gemma 4 architecture. vision embedding audio 270m 440m 570m 740m",
-      "capabilities": [],
-      "param_sizes": [],
-      "pulls": "71.8K",
-      "variants": [
-        {
-          "tag": "embeddinggemma-2",
-          "param_size": "default",
-          "required_gb": 4.0
-        }
-      ],
-      "purposes": [
-        "embedding"
-      ]
-    },
-    {
       "identifier": "minicpm-v4.5",
       "description": "A GPT-4o Level MLLM for Single Image, Multi Image and High-FPS Video Understanding on Your Phone",
       "capabilities": [
@@ -5992,7 +5994,7 @@
       "param_sizes": [
         "8b"
       ],
-      "pulls": "58.9K",
+      "pulls": "59.8K",
       "variants": [
         {
           "tag": "minicpm-v4.5:8b",
@@ -6014,7 +6016,7 @@
       "param_sizes": [
         "9b"
       ],
-      "pulls": "53.5K",
+      "pulls": "54.9K",
       "variants": [
         {
           "tag": "nimble:9b",
@@ -6037,7 +6039,7 @@
       "param_sizes": [
         "8b"
       ],
-      "pulls": "40.4K",
+      "pulls": "40.8K",
       "variants": [
         {
           "tag": "granite4.1-guardian:8b",
@@ -6046,28 +6048,6 @@
         }
       ],
       "purposes": [
-        "general",
-        "reasoning"
-      ]
-    },
-    {
-      "identifier": "laguna-xs.2",
-      "description": "Laguna XS.2 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.",
-      "capabilities": [
-        "tools",
-        "thinking"
-      ],
-      "param_sizes": [],
-      "pulls": "38.3K",
-      "variants": [
-        {
-          "tag": "laguna-xs.2",
-          "param_size": "default",
-          "required_gb": 4.0
-        }
-      ],
-      "purposes": [
-        "coding",
         "general",
         "reasoning"
       ]
@@ -6086,7 +6066,7 @@
         "9b",
         "27b"
       ],
-      "pulls": "35.4K",
+      "pulls": "40.7K",
       "variants": [
         {
           "tag": "bonsai-2:2b",
@@ -6116,58 +6096,17 @@
       ]
     },
     {
-      "identifier": "clef-flash",
-      "description": "Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions. vision decision",
-      "capabilities": [],
-      "param_sizes": [
-        "9b"
-      ],
-      "pulls": "33.1K",
-      "variants": [
-        {
-          "tag": "clef-flash:9b",
-          "param_size": "9b",
-          "required_gb": 6.4
-        }
-      ],
-      "purposes": [
-        "general"
-      ]
-    },
-    {
-      "identifier": "clef",
-      "description": "Clef is a 27B multimodal model created by Cloudflare that turns a state and a schema of typed questions into decisions. vision decision",
-      "capabilities": [
-        "cloud"
-      ],
-      "param_sizes": [
-        "27b"
-      ],
-      "pulls": "27.3K",
-      "variants": [
-        {
-          "tag": "clef:27b",
-          "param_size": "27b",
-          "required_gb": 17.2
-        }
-      ],
-      "purposes": [
-        "general"
-      ]
-    },
-    {
-      "identifier": "beam",
-      "description": "Beam is an open model by Reflection designed to deliver strong performance for areas such as agentic tool use, coding and general reasoning with an emphasis on token efficient usage.",
+      "identifier": "laguna-xs.2",
+      "description": "Laguna XS.2 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.",
       "capabilities": [
         "tools",
-        "thinking",
-        "cloud"
+        "thinking"
       ],
       "param_sizes": [],
-      "pulls": "23.3K",
+      "pulls": "38.5K",
       "variants": [
         {
-          "tag": "beam",
+          "tag": "laguna-xs.2",
           "param_size": "default",
           "required_gb": 4.0
         }
@@ -6188,7 +6127,7 @@
         "cloud"
       ],
       "param_sizes": [],
-      "pulls": "22.6K",
+      "pulls": "36.6K",
       "variants": [
         {
           "tag": "minimax-m3.1-flash",
@@ -6204,6 +6143,69 @@
       ]
     },
     {
+      "identifier": "clef-flash",
+      "description": "Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions. vision decision",
+      "capabilities": [],
+      "param_sizes": [
+        "9b"
+      ],
+      "pulls": "34.6K",
+      "variants": [
+        {
+          "tag": "clef-flash:9b",
+          "param_size": "9b",
+          "required_gb": 6.4
+        }
+      ],
+      "purposes": [
+        "general"
+      ]
+    },
+    {
+      "identifier": "clef",
+      "description": "Clef is a 27B multimodal model created by Cloudflare that turns a state and a schema of typed questions into decisions. vision decision",
+      "capabilities": [
+        "cloud"
+      ],
+      "param_sizes": [
+        "27b"
+      ],
+      "pulls": "29.5K",
+      "variants": [
+        {
+          "tag": "clef:27b",
+          "param_size": "27b",
+          "required_gb": 17.2
+        }
+      ],
+      "purposes": [
+        "general"
+      ]
+    },
+    {
+      "identifier": "beam",
+      "description": "Beam is an open model by Reflection designed to deliver strong performance for areas such as agentic tool use, coding and general reasoning with an emphasis on token efficient usage.",
+      "capabilities": [
+        "tools",
+        "thinking",
+        "cloud"
+      ],
+      "param_sizes": [],
+      "pulls": "25.5K",
+      "variants": [
+        {
+          "tag": "beam",
+          "param_size": "default",
+          "required_gb": 4.0
+        }
+      ],
+      "purposes": [
+        "coding",
+        "general",
+        "reasoning"
+      ]
+    },
+    {
       "identifier": "d1",
       "description": "d1 is a 3B decision model from Liquid AI, built on LFM2.5-VL-3B",
       "capabilities": [
@@ -6212,7 +6214,7 @@
       "param_sizes": [
         "3b"
       ],
-      "pulls": "17.5K",
+      "pulls": "18.2K",
       "variants": [
         {
           "tag": "d1:3b",
@@ -6234,7 +6236,7 @@
       "param_sizes": [
         "9b"
       ],
-      "pulls": "14.9K",
+      "pulls": "15.6K",
       "variants": [
         {
           "tag": "nimble-v3:9b",
@@ -6252,7 +6254,7 @@
       "description": "Laya is a 421M decision model from Convai Innovations, fine-tuned from ModernBERT-large. embedding decision",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "12.7K",
+      "pulls": "13.4K",
       "variants": [
         {
           "tag": "laya",
@@ -6262,30 +6264,6 @@
       ],
       "purposes": [
         "general"
-      ]
-    },
-    {
-      "identifier": "mistral-large-4",
-      "description": "Mistral Large 4 is Mistral's open-weight, general-purpose multimodal model. Its granular Mixture-of-Experts design activates 52B of 1.05T total parameters, with a 1.6B vision encoder handling images.",
-      "capabilities": [
-        "vision",
-        "tools",
-        "thinking",
-        "cloud"
-      ],
-      "param_sizes": [],
-      "pulls": "10.9K",
-      "variants": [
-        {
-          "tag": "mistral-large-4",
-          "param_size": "default",
-          "required_gb": 4.0
-        }
-      ],
-      "purposes": [
-        "general",
-        "reasoning",
-        "vision"
       ]
     },
     {
@@ -6299,7 +6277,7 @@
       "param_sizes": [
         "120b"
       ],
-      "pulls": "10.6K",
+      "pulls": "11.9K",
       "variants": [
         {
           "tag": "nemotron-3.5-super:120b",
@@ -6315,11 +6293,35 @@
       ]
     },
     {
+      "identifier": "mistral-large-4",
+      "description": "Mistral Large 4 is Mistral's open-weight, general-purpose multimodal model. Its granular Mixture-of-Experts design activates 52B of 1.05T total parameters, with a 1.6B vision encoder handling images.",
+      "capabilities": [
+        "vision",
+        "tools",
+        "thinking",
+        "cloud"
+      ],
+      "param_sizes": [],
+      "pulls": "11.5K",
+      "variants": [
+        {
+          "tag": "mistral-large-4",
+          "param_size": "default",
+          "required_gb": 4.0
+        }
+      ],
+      "purposes": [
+        "general",
+        "reasoning",
+        "vision"
+      ]
+    },
+    {
       "identifier": "kev",
-      "description": "Kev scores answers to structured questions about a supplied text state in a single forward pass. decision 8,",
+      "description": "Kev scores answers to structured questions about a supplied text state in a single forward pass. decision 9,",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "470",
+      "pulls": "453",
       "variants": [
         {
           "tag": "kev",
@@ -6333,10 +6335,10 @@
     },
     {
       "identifier": "nemotron-3.5-bolt",
-      "description": "Nemotron 3.5 Bolt is NVIDIA’s compact vision-language model for local coding, reasoning, and tool use. vision tools thinking 7,",
+      "description": "Nemotron 3.5 Bolt is NVIDIA’s compact vision-language model for local coding, reasoning, and tool use. vision tools thinking 8,",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "558",
+      "pulls": "454",
       "variants": [
         {
           "tag": "nemotron-3.5-bolt",
@@ -6352,10 +6354,10 @@
     },
     {
       "identifier": "pplx-decider",
-      "description": "pplx-decider is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B vision decision 27b 6,",
+      "description": "pplx-decider is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B vision decision 27b 7,",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "874",
+      "pulls": "952",
       "variants": [
         {
           "tag": "pplx-decider",
@@ -6372,7 +6374,7 @@
       "description": "A 2B decision model from Strands Agents for fast classification, routing, and scoring. decision 2b 5,",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "591",
+      "pulls": "879",
       "variants": [
         {
           "tag": "strands-decider",
@@ -6386,10 +6388,10 @@
     },
     {
       "identifier": "d1-omni",
-      "description": "d1-omni is a multimodal 600M decision model from Liquid AI vision 600m 4,",
+      "description": "d1-omni is a multimodal 600M decision model from Liquid AI vision 600m 5,",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "026",
+      "pulls": "290",
       "variants": [
         {
           "tag": "d1-omni",
@@ -6402,11 +6404,29 @@
       ]
     },
     {
-      "identifier": "muse-spark-open",
-      "description": "Muse Spark Open is a natively multimodal model with 816B total parameters (42B active) and a 1M-token context window. Built for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning. vision tools thinking cloud 3,",
+      "identifier": "flint",
+      "description": "Flint is a 39.8 billion-parameter mixture-of-experts model from Recursive, built for coding agents. tools thinking 40b 4,",
       "capabilities": [],
       "param_sizes": [],
-      "pulls": "887",
+      "pulls": "454",
+      "variants": [
+        {
+          "tag": "flint",
+          "param_size": "default",
+          "required_gb": 4.0
+        }
+      ],
+      "purposes": [
+        "coding",
+        "general"
+      ]
+    },
+    {
+      "identifier": "muse-spark-open",
+      "description": "Muse Spark Open is a natively multimodal model with 816B total parameters (42B active) and a 1M-token context window. Built for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning. vision tools thinking cloud 4,",
+      "capabilities": [],
+      "param_sizes": [],
+      "pulls": "306",
       "variants": [
         {
           "tag": "muse-spark-open",
