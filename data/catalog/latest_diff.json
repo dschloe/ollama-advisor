@@ -1,13 +1,10 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "source": "live",
   "model_count": 260,
   "variant_count": 446,
   "diff": {
-    "added": [
-      "d3",
-      "phonon"
-    ],
+    "added": [],
     "removed": []
   }
 }
