@@ -1,10 +1,15 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "source": "live",
-  "model_count": 260,
-  "variant_count": 449,
+  "model_count": 264,
+  "variant_count": 454,
   "diff": {
-    "added": [],
+    "added": [
+      "lfm3",
+      "lfm3-audio",
+      "lfm3-omni",
+      "lfm3-vl"
+    ],
     "removed": []
   }
 }
