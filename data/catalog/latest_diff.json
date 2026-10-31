@@ -1,10 +1,13 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "source": "live",
-  "model_count": 264,
-  "variant_count": 454,
+  "model_count": 266,
+  "variant_count": 456,
   "diff": {
-    "added": [],
+    "added": [
+      "mimo-v2.6-flash",
+      "mimo-v2.6-pro"
+    ],
     "removed": []
   }
 }
