@@ -1,10 +1,13 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "source": "live",
-  "model_count": 266,
-  "variant_count": 456,
+  "model_count": 268,
+  "variant_count": 458,
   "diff": {
-    "added": [],
+    "added": [
+      "mimo-v2.6",
+      "pplx-decider-flash"
+    ],
     "removed": []
   }
 }
