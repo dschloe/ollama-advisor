@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "source": "live",
-  "model_count": 268,
-  "variant_count": 458,
+  "model_count": 270,
+  "variant_count": 460,
   "diff": {
     "added": [
-      "mimo-v2.6",
-      "pplx-decider-flash"
+      "autotrust-jev",
+      "kimi-k3.1-pro"
     ],
     "removed": []
   }
