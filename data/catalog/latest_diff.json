@@ -1,13 +1,10 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "source": "live",
   "model_count": 270,
   "variant_count": 460,
   "diff": {
-    "added": [
-      "autotrust-jev",
-      "kimi-k3.1-pro"
-    ],
+    "added": [],
     "removed": []
   }
 }
