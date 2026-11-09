@@ -1,10 +1,13 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "source": "live",
-  "model_count": 270,
-  "variant_count": 461,
+  "model_count": 268,
+  "variant_count": 459,
   "diff": {
     "added": [],
-    "removed": []
+    "removed": [
+      "minimax-m2.7",
+      "mistral-large-3"
+    ]
   }
 }
