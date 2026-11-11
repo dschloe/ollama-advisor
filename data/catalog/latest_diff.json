@@ -1,12 +1,10 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "source": "live",
   "model_count": 269,
   "variant_count": 460,
   "diff": {
-    "added": [
-      "ripple-preview"
-    ],
+    "added": [],
     "removed": []
   }
 }
