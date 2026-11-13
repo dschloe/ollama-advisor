@@ -1,10 +1,12 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "source": "live",
-  "model_count": 269,
-  "variant_count": 460,
+  "model_count": 270,
+  "variant_count": 461,
   "diff": {
-    "added": [],
+    "added": [
+      "inkling-2-small"
+    ],
     "removed": []
   }
 }
