@@ -185,8 +185,8 @@ twine upload dist/*
 
 | Metric | Count |
 |--------|------:|
-| **Today** (2026-11-16) | 12 |
-| **Total (cumulative)** | 1,772 |
+| **Today** (2026-11-17) | 3 |
+| **Total (cumulative)** | 1,775 |
 
 > Updated daily via GitHub Actions
 ## License
