@@ -2,7 +2,7 @@ identifier,tag,param_size,required_gb,pulls,capabilities,purposes,description
 llama3.1,llama3.1:8b,8b,5.8,121.2M,tools,general,"Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes."
 llama3.1,llama3.1:70b,70b,43.0,121.2M,tools,general,"Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes."
 llama3.1,llama3.1:405b,405b,244.0,121.2M,tools,general,"Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes."
-nomic-embed-text,nomic-embed-text,default,4.0,98.2M,embedding,embedding,A high-performing open embedding model with a large token context window.
+nomic-embed-text,nomic-embed-text,default,4.0,98.3M,embedding,embedding,A high-performing open embedding model with a large token context window.
 deepseek-r1,deepseek-r1:1.5b,1.5b,1.9,95.2M,tools|thinking,general|reasoning,"DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro."
 deepseek-r1,deepseek-r1:7b,7b,5.2,95.2M,tools|thinking,general|reasoning,"DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro."
 deepseek-r1,deepseek-r1:8b,8b,5.8,95.2M,tools|thinking,general|reasoning,"DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro."
@@ -10,41 +10,41 @@ deepseek-r1,deepseek-r1:14b,14b,9.4,95.2M,tools|thinking,general|reasoning,"Deep
 deepseek-r1,deepseek-r1:32b,32b,20.2,95.2M,tools|thinking,general|reasoning,"DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro."
 deepseek-r1,deepseek-r1:70b,70b,43.0,95.2M,tools|thinking,general|reasoning,"DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro."
 deepseek-r1,deepseek-r1:671b,671b,403.6,95.2M,tools|thinking,general|reasoning,"DeepSeek-R1 is a family of open reasoning models with performance approaching that of leading models, such as O3 and Gemini 2.5 Pro."
-llama3.2,llama3.2:1b,1b,1.6,87.9M,tools,general,Meta's Llama 3.2 goes small with 1B and 3B models.
-llama3.2,llama3.2:3b,3b,2.8,87.9M,tools,general,Meta's Llama 3.2 goes small with 1B and 3B models.
-qwen2.5,qwen2.5:0.5b,0.5b,1.3,46.2M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
-qwen2.5,qwen2.5:1.5b,1.5b,1.9,46.2M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
-qwen2.5,qwen2.5:3b,3b,2.8,46.2M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
-qwen2.5,qwen2.5:7b,7b,5.2,46.2M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
-qwen2.5,qwen2.5:14b,14b,9.4,46.2M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
-qwen2.5,qwen2.5:32b,32b,20.2,46.2M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
-qwen2.5,qwen2.5:72b,72b,44.2,46.2M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
-qwen3,qwen3:0.6b,0.6b,1.36,43.9M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
-qwen3,qwen3:1.7b,1.7b,2.02,43.9M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
-qwen3,qwen3:4b,4b,3.4,43.9M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
-qwen3,qwen3:8b,8b,5.8,43.9M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
-qwen3,qwen3:14b,14b,9.4,43.9M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
-qwen3,qwen3:30b,30b,19.0,43.9M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
-qwen3,qwen3:32b,32b,20.2,43.9M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
-qwen3,qwen3:235b,235b,142.0,43.9M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+llama3.2,llama3.2:1b,1b,1.6,88M,tools,general,Meta's Llama 3.2 goes small with 1B and 3B models.
+llama3.2,llama3.2:3b,3b,2.8,88M,tools,general,Meta's Llama 3.2 goes small with 1B and 3B models.
+qwen2.5,qwen2.5:0.5b,0.5b,1.3,46.3M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+qwen2.5,qwen2.5:1.5b,1.5b,1.9,46.3M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+qwen2.5,qwen2.5:3b,3b,2.8,46.3M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+qwen2.5,qwen2.5:7b,7b,5.2,46.3M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+qwen2.5,qwen2.5:14b,14b,9.4,46.3M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+qwen2.5,qwen2.5:32b,32b,20.2,46.3M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+qwen2.5,qwen2.5:72b,72b,44.2,46.3M,tools,general,"Qwen2.5 models are pretrained on Alibaba's latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+qwen3,qwen3:0.6b,0.6b,1.36,44M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+qwen3,qwen3:1.7b,1.7b,2.02,44M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+qwen3,qwen3:4b,4b,3.4,44M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+qwen3,qwen3:8b,8b,5.8,44M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+qwen3,qwen3:14b,14b,9.4,44M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+qwen3,qwen3:30b,30b,19.0,44M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+qwen3,qwen3:32b,32b,20.2,44M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+qwen3,qwen3:235b,235b,142.0,44M,tools|thinking,general|reasoning,"Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
 gemma3,gemma3:1b,1b,1.6,42M,,general,"The current, most capable model that runs on a single GPU. vision 270m"
 gemma3,gemma3:4b,4b,3.4,42M,,general,"The current, most capable model that runs on a single GPU. vision 270m"
 gemma3,gemma3:12b,12b,8.2,42M,,general,"The current, most capable model that runs on a single GPU. vision 270m"
 gemma3,gemma3:27b,27b,17.2,42M,,general,"The current, most capable model that runs on a single GPU. vision 270m"
-gemma2,gemma2:2b,2b,2.2,37.5M,,general,"Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
-gemma2,gemma2:9b,9b,6.4,37.5M,,general,"Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
-gemma2,gemma2:27b,27b,17.2,37.5M,,general,"Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
-mistral,mistral:7b,7b,5.2,34.2M,tools,general,"The 7B model released by Mistral AI, updated to version 0.3."
-gemma4,gemma4:12b,12b,8.2,29.4M,,coding|general|reasoning,"Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. vision tools thinking audio cloud e2b e4b"
-gemma4,gemma4:26b,26b,16.6,29.4M,,coding|general|reasoning,"Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. vision tools thinking audio cloud e2b e4b"
-gemma4,gemma4:31b,31b,19.6,29.4M,,coding|general|reasoning,"Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. vision tools thinking audio cloud e2b e4b"
-qwen3.5,qwen3.5:0.8b,0.8b,1.48,26.6M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
-qwen3.5,qwen3.5:2b,2b,2.2,26.6M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
-qwen3.5,qwen3.5:4b,4b,3.4,26.6M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
-qwen3.5,qwen3.5:9b,9b,6.4,26.6M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
-qwen3.5,qwen3.5:27b,27b,17.2,26.6M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
-qwen3.5,qwen3.5:35b,35b,22.0,26.6M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
-qwen3.5,qwen3.5:122b,122b,74.2,26.6M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
+gemma2,gemma2:2b,2b,2.2,37.6M,,general,"Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
+gemma2,gemma2:9b,9b,6.4,37.6M,,general,"Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
+gemma2,gemma2:27b,27b,17.2,37.6M,,general,"Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
+mistral,mistral:7b,7b,5.2,34.3M,tools,general,"The 7B model released by Mistral AI, updated to version 0.3."
+gemma4,gemma4:12b,12b,8.2,29.5M,,coding|general|reasoning,"Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. vision tools thinking audio cloud e2b e4b"
+gemma4,gemma4:26b,26b,16.6,29.5M,,coding|general|reasoning,"Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. vision tools thinking audio cloud e2b e4b"
+gemma4,gemma4:31b,31b,19.6,29.5M,,coding|general|reasoning,"Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. vision tools thinking audio cloud e2b e4b"
+qwen3.5,qwen3.5:0.8b,0.8b,1.48,26.8M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
+qwen3.5,qwen3.5:2b,2b,2.2,26.8M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
+qwen3.5,qwen3.5:4b,4b,3.4,26.8M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
+qwen3.5,qwen3.5:9b,9b,6.4,26.8M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
+qwen3.5,qwen3.5:27b,27b,17.2,26.8M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
+qwen3.5,qwen3.5:35b,35b,22.0,26.8M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
+qwen3.5,qwen3.5:122b,122b,74.2,26.8M,vision|tools|thinking,general|reasoning|vision,Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance.
 llama3,llama3:8b,8b,5.8,26M,,general,Meta Llama 3: The most capable openly available LLM to date
 llama3,llama3:70b,70b,43.0,26M,,general,Meta Llama 3: The most capable openly available LLM to date
 qwen2.5-coder,qwen2.5-coder:0.5b,0.5b,1.3,23.9M,tools,coding|general|reasoning,"The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing."
@@ -64,13 +64,13 @@ llava,llava:34b,34b,21.4,15.4M,vision,general|vision,🌋 LLaVA is a novel end-t
 qwen3-coder,qwen3-coder:30b,30b,19.0,11.1M,tools,coding|general,Alibaba's performant long context models for agentic and coding tasks.
 qwen3-coder,qwen3-coder:480b,480b,289.0,11.1M,tools,coding|general,Alibaba's performant long context models for agentic and coding tasks.
 glm-ocr,glm-ocr,default,4.0,9.4M,vision|tools,general|vision,"GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder–decoder architecture."
-bge-m3,bge-m3,default,4.0,8.6M,,general,"BGE-M3 is a new model from BAAI distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. embedding 567m"
-gemma,gemma:2b,2b,2.2,8.4M,,general,"Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1"
-gemma,gemma:7b,7b,5.2,8.4M,,general,"Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1"
-codellama,codellama:7b,7b,5.2,8.4M,,coding|general,A large language model that can use text prompts to generate and discuss code.
-codellama,codellama:13b,13b,8.8,8.4M,,coding|general,A large language model that can use text prompts to generate and discuss code.
-codellama,codellama:34b,34b,21.4,8.4M,,coding|general,A large language model that can use text prompts to generate and discuss code.
-codellama,codellama:70b,70b,43.0,8.4M,,coding|general,A large language model that can use text prompts to generate and discuss code.
+bge-m3,bge-m3,default,4.0,8.7M,,general,"BGE-M3 is a new model from BAAI distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. embedding 567m"
+codellama,codellama:7b,7b,5.2,8.5M,,coding|general,A large language model that can use text prompts to generate and discuss code.
+codellama,codellama:13b,13b,8.8,8.5M,,coding|general,A large language model that can use text prompts to generate and discuss code.
+codellama,codellama:34b,34b,21.4,8.5M,,coding|general,A large language model that can use text prompts to generate and discuss code.
+codellama,codellama:70b,70b,43.0,8.5M,,coding|general,A large language model that can use text prompts to generate and discuss code.
+gemma,gemma:2b,2b,2.2,8.5M,,general,"Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1"
+gemma,gemma:7b,7b,5.2,8.5M,,general,"Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind. Updated to version 1.1"
 qwen,qwen:0.5b,0.5b,1.3,8.3M,,general,Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters
 qwen,qwen:1.8b,1.8b,2.08,8.3M,,general,Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters
 qwen,qwen:4b,4b,3.4,8.3M,,general,Qwen 1.5 is a series of large language models by Alibaba Cloud spanning from 0.5B to 110B parameters
@@ -85,22 +85,22 @@ qwen3.6,qwen3.6:35b,35b,22.0,7.7M,vision|tools|thinking,coding|general|reasoning
 llama2,llama2:7b,7b,5.2,7.6M,,general,Llama 2 is a collection of foundation language models ranging from 7B to 70B parameters.
 llama2,llama2:13b,13b,8.8,7.6M,,general,Llama 2 is a collection of foundation language models ranging from 7B to 70B parameters.
 llama2,llama2:70b,70b,43.0,7.6M,,general,Llama 2 is a collection of foundation language models ranging from 7B to 70B parameters.
-qwen3-vl,qwen3-vl:2b,2b,2.2,7.3M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
-qwen3-vl,qwen3-vl:4b,4b,3.4,7.3M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
-qwen3-vl,qwen3-vl:8b,8b,5.8,7.3M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
-qwen3-vl,qwen3-vl:30b,30b,19.0,7.3M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
-qwen3-vl,qwen3-vl:32b,32b,20.2,7.3M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
-qwen3-vl,qwen3-vl:235b,235b,142.0,7.3M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
-qwen3.8,qwen3.8:27b,27b,17.2,6.9M,vision|tools|thinking,coding|general|reasoning|vision,"Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
-tinyllama,tinyllama:1.1b,1.1b,1.66,6.8M,,general,The TinyLlama project is an open endeavor to train a compact 1.1B Llama model on 3 trillion tokens.
+qwen3-vl,qwen3-vl:2b,2b,2.2,7.4M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
+qwen3-vl,qwen3-vl:4b,4b,3.4,7.4M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
+qwen3-vl,qwen3-vl:8b,8b,5.8,7.4M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
+qwen3-vl,qwen3-vl:30b,30b,19.0,7.4M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
+qwen3-vl,qwen3-vl:32b,32b,20.2,7.4M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
+qwen3-vl,qwen3-vl:235b,235b,142.0,7.4M,vision|tools|thinking,general|reasoning|vision,The most powerful vision-language model in the Qwen model family to date.
+qwen3.8,qwen3.8:27b,27b,17.2,7M,vision|tools|thinking,coding|general|reasoning|vision,"Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+tinyllama,tinyllama:1.1b,1.1b,1.66,6.9M,,general,The TinyLlama project is an open endeavor to train a compact 1.1B Llama model on 3 trillion tokens.
 qwen2,qwen2:0.5b,0.5b,1.3,6.4M,tools,general,Qwen2 is a new series of large language models from Alibaba group
 qwen2,qwen2:1.5b,1.5b,1.9,6.4M,tools,general,Qwen2 is a new series of large language models from Alibaba group
 qwen2,qwen2:7b,7b,5.2,6.4M,tools,general,Qwen2 is a new series of large language models from Alibaba group
 qwen2,qwen2:72b,72b,44.2,6.4M,tools,general,Qwen2 is a new series of large language models from Alibaba group
-qwen2.5vl,qwen2.5vl:3b,3b,2.8,6.2M,vision,general|vision,Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.
-qwen2.5vl,qwen2.5vl:7b,7b,5.2,6.2M,vision,general|vision,Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.
-qwen2.5vl,qwen2.5vl:32b,32b,20.2,6.2M,vision,general|vision,Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.
-qwen2.5vl,qwen2.5vl:72b,72b,44.2,6.2M,vision,general|vision,Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.
+qwen2.5vl,qwen2.5vl:3b,3b,2.8,6.3M,vision,general|vision,Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.
+qwen2.5vl,qwen2.5vl:7b,7b,5.2,6.3M,vision,general|vision,Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.
+qwen2.5vl,qwen2.5vl:32b,32b,20.2,6.3M,vision,general|vision,Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.
+qwen2.5vl,qwen2.5vl:72b,72b,44.2,6.3M,vision,general|vision,Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL.
 mistral-nemo,mistral-nemo:12b,12b,8.2,5.8M,tools,general,"A state-of-the-art 12B model with 128k context length, built by Mistral AI in collaboration with NVIDIA."
 minicpm-v,minicpm-v:8b,8b,5.8,5.8M,vision,general|vision,A series of multimodal LLMs (MLLMs) designed for vision-language understanding.
 llama3.2-vision,llama3.2-vision:11b,11b,7.6,5.6M,vision,general|reasoning|vision,Llama 3.2 Vision is a collection of instruction-tuned image reasoning generative models in 11B and 90B sizes.
@@ -129,11 +129,11 @@ orca-mini,orca-mini:3b,3b,2.8,3.2M,,general,"A general-purpose model ranging fro
 orca-mini,orca-mini:7b,7b,5.2,3.2M,,general,"A general-purpose model ranging from 3 billion parameters to 70 billion, suitable for entry-level hardware."
 orca-mini,orca-mini:13b,13b,8.8,3.2M,,general,"A general-purpose model ranging from 3 billion parameters to 70 billion, suitable for entry-level hardware."
 orca-mini,orca-mini:70b,70b,43.0,3.2M,,general,"A general-purpose model ranging from 3 billion parameters to 70 billion, suitable for entry-level hardware."
-granite3.1-moe,granite3.1-moe:1b,1b,1.6,3.1M,tools,general,The IBM Granite 1B and 3B models are long-context mixture of experts (MoE) Granite models from IBM designed for low latency usage.
-granite3.1-moe,granite3.1-moe:3b,3b,2.8,3.1M,tools,general,The IBM Granite 1B and 3B models are long-context mixture of experts (MoE) Granite models from IBM designed for low latency usage.
 starcoder2,starcoder2:3b,3b,2.8,3.1M,,coding|general,"StarCoder2 is the next generation of transparently trained open code LLMs that comes in three sizes: 3B, 7B and 15B parameters."
 starcoder2,starcoder2:7b,7b,5.2,3.1M,,coding|general,"StarCoder2 is the next generation of transparently trained open code LLMs that comes in three sizes: 3B, 7B and 15B parameters."
 starcoder2,starcoder2:15b,15b,10.0,3.1M,,coding|general,"StarCoder2 is the next generation of transparently trained open code LLMs that comes in three sizes: 3B, 7B and 15B parameters."
+granite3.1-moe,granite3.1-moe:1b,1b,1.6,3.1M,tools,general,The IBM Granite 1B and 3B models are long-context mixture of experts (MoE) Granite models from IBM designed for low latency usage.
+granite3.1-moe,granite3.1-moe:3b,3b,2.8,3.1M,tools,general,The IBM Granite 1B and 3B models are long-context mixture of experts (MoE) Granite models from IBM designed for low latency usage.
 nemotron-3-super,nemotron-3-super:120b,120b,73.0,3.1M,tools|thinking|cloud,general|reasoning,NVIDIA Nemotron 3 Super is a 120B open MoE model activating just 12B parameters to deliver maximum compute efficiency and accuracy for complex multi-agent applications.
 mixtral,mixtral:8x7b,8x7b,34.6,3M,tools,general,A set of Mixture of Experts (MoE) model with open weights by Mistral AI in 8x7b and 8x22b parameter sizes.
 mixtral,mixtral:8x22b,8x22b,106.6,3M,tools,general,A set of Mixture of Experts (MoE) model with open weights by Mistral AI in 8x7b and 8x22b parameter sizes.
@@ -141,7 +141,7 @@ translategemma,translategemma:4b,4b,3.4,3M,vision,general|vision,"A new collecti
 translategemma,translategemma:12b,12b,8.2,3M,vision,general|vision,"A new collection of open translation models built on Gemma 3, helping people communicate across 55 languages."
 translategemma,translategemma:27b,27b,17.2,3M,vision,general|vision,"A new collection of open translation models built on Gemma 3, helping people communicate across 55 languages."
 embeddinggemma,embeddinggemma,default,4.0,2.9M,,embedding,EmbeddingGemma is a 300M parameter embedding model from Google. embedding 300m
-devstral-small-2,devstral-small-2:24b,24b,15.4,2.8M,vision|tools,coding|general|vision,"24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents."
+devstral-small-2,devstral-small-2:24b,24b,15.4,2.9M,vision|tools,coding|general|vision,"24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents."
 llama2-uncensored,llama2-uncensored:7b,7b,5.2,2.8M,,general,Uncensored Llama 2 model by George Sung and Jarrad Hope.
 llama2-uncensored,llama2-uncensored:70b,70b,43.0,2.8M,,general,Uncensored Llama 2 model by George Sung and Jarrad Hope.
 falcon3,falcon3:1b,1b,1.6,2.7M,,coding|general,"A family of efficient AI models under 10B parameters performant in science, math, and coding through innovative training techniques."
@@ -156,8 +156,8 @@ sqlcoder,sqlcoder:15b,15b,10.0,2.4M,,coding|general,SQLCoder is a code completio
 llava-llama3,llava-llama3:8b,8b,5.8,2.3M,vision,general|vision,A LLaVA model fine-tuned from Llama 3 Instruct with better scores in several benchmarks.
 qwq,qwq:32b,32b,20.2,2.3M,tools,general|reasoning,QwQ is the reasoning model of the Qwen series.
 qwen3-coder-next,qwen3-coder-next,default,4.0,2.3M,tools,coding|general,"Qwen3-Coder-Next is a coding-focused language model from Alibaba's Qwen team, optimized for agentic coding workflows and local development."
-dolphin-llama3,dolphin-llama3:8b,8b,5.8,2.2M,,coding|general,"Dolphin 2.9 is a new model with 8B and 70B sizes by Eric Hartford based on Llama 3 that has a variety of instruction, conversational, and coding skills."
-dolphin-llama3,dolphin-llama3:70b,70b,43.0,2.2M,,coding|general,"Dolphin 2.9 is a new model with 8B and 70B sizes by Eric Hartford based on Llama 3 that has a variety of instruction, conversational, and coding skills."
+dolphin-llama3,dolphin-llama3:8b,8b,5.8,2.3M,,coding|general,"Dolphin 2.9 is a new model with 8B and 70B sizes by Eric Hartford based on Llama 3 that has a variety of instruction, conversational, and coding skills."
+dolphin-llama3,dolphin-llama3:70b,70b,43.0,2.3M,,coding|general,"Dolphin 2.9 is a new model with 8B and 70B sizes by Eric Hartford based on Llama 3 that has a variety of instruction, conversational, and coding skills."
 moondream,moondream:1.8b,1.8b,2.08,2.2M,vision,general|vision,moondream2 is a small vision language model designed to run efficiently on edge devices.
 glm-4.7-flash,glm-4.7-flash,default,4.0,2.2M,tools|thinking,general|reasoning,"As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency."
 cogito,cogito:3b,3b,2.8,2.2M,tools,general|reasoning,"Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks."
@@ -165,10 +165,10 @@ cogito,cogito:8b,8b,5.8,2.2M,tools,general|reasoning,"Cogito v1 Preview is a fam
 cogito,cogito:14b,14b,9.4,2.2M,tools,general|reasoning,"Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks."
 cogito,cogito:32b,32b,20.2,2.2M,tools,general|reasoning,"Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks."
 cogito,cogito:70b,70b,43.0,2.2M,tools,general|reasoning,"Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito that outperform the best available open models of the same size, including counterparts from LLaMA, DeepSeek, and Qwen across most standard benchmarks."
-starcoder,starcoder:1b,1b,1.6,2.1M,,coding|general,StarCoder is a code generation model trained on 80+ programming languages.
-starcoder,starcoder:3b,3b,2.8,2.1M,,coding|general,StarCoder is a code generation model trained on 80+ programming languages.
-starcoder,starcoder:7b,7b,5.2,2.1M,,coding|general,StarCoder is a code generation model trained on 80+ programming languages.
-starcoder,starcoder:15b,15b,10.0,2.1M,,coding|general,StarCoder is a code generation model trained on 80+ programming languages.
+starcoder,starcoder:1b,1b,1.6,2.2M,,coding|general,StarCoder is a code generation model trained on 80+ programming languages.
+starcoder,starcoder:3b,3b,2.8,2.2M,,coding|general,StarCoder is a code generation model trained on 80+ programming languages.
+starcoder,starcoder:7b,7b,5.2,2.2M,,coding|general,StarCoder is a code generation model trained on 80+ programming languages.
+starcoder,starcoder:15b,15b,10.0,2.2M,,coding|general,StarCoder is a code generation model trained on 80+ programming languages.
 wizardcoder,wizardcoder:33b,33b,20.8,2.1M,,coding|general,State-of-the-art code generation model
 dolphin-mixtral,dolphin-mixtral:8x7b,8x7b,34.6,2M,,coding|general,"Uncensored, 8x7b and 8x22b fine-tuned models based on the Mixtral mixture of experts models that excels at coding tasks. Created by Eric Hartford."
 dolphin-mixtral,dolphin-mixtral:8x22b,8x22b,106.6,2M,,coding|general,"Uncensored, 8x7b and 8x22b fine-tuned models based on the Mixtral mixture of experts models that excels at coding tasks. Created by Eric Hartford."
@@ -197,15 +197,15 @@ granite4,granite4:1b,1b,1.6,1.6M,,general,"Granite 4 features improved instructi
 granite4,granite4:3b,3b,2.8,1.6M,,general,"Granite 4 features improved instruction following (IF) and tool-calling capabilities, making them more effective in enterprise applications. tools 350m"
 command-r,command-r:35b,35b,22.0,1.6M,tools,general,Command R is a Large Language Model optimized for conversational interaction and long context tasks.
 phi,phi:2.7b,2.7b,2.62,1.6M,,general|reasoning,Phi-2: a 2.7B language model by Microsoft Research that demonstrates outstanding reasoning and language understanding capabilities.
-magistral,magistral:24b,24b,15.4,1.5M,tools|thinking,general|reasoning,"Magistral is a small, efficient reasoning model with 24B parameters."
 mistral-openorca,mistral-openorca:7b,7b,5.2,1.5M,,general,"Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset."
+magistral,magistral:24b,24b,15.4,1.5M,tools|thinking,general|reasoning,"Magistral is a small, efficient reasoning model with 24B parameters."
 nomic-embed-text-v2-moe,nomic-embed-text-v2-moe,default,4.0,1.4M,embedding,embedding,nomic-embed-text-v2-moe is a multilingual MoE text embedding model that excels at multilingual retrieval.
 openchat,openchat:7b,7b,5.2,1.4M,,general,"A family of open-source models trained on a wide variety of data, surpassing ChatGPT on various benchmarks. Updated to version 3.5-0106."
 codestral,codestral:22b,22b,14.2,1.4M,,coding|general,Codestral is Mistral AI’s first-ever code model designed for code generation tasks.
 mistral-large,mistral-large:123b,123b,74.8,1.4M,tools,coding|general|reasoning,"Mistral Large 2 is Mistral's new flagship model that is significantly more capable in code generation, mathematics, and reasoning with 128k context window and support for dozens of languages."
-wizard-vicuna-uncensored,wizard-vicuna-uncensored:7b,7b,5.2,1.3M,,general,"Wizard Vicuna Uncensored is a 7B, 13B, and 30B parameter model based on Llama 2 uncensored by Eric Hartford."
-wizard-vicuna-uncensored,wizard-vicuna-uncensored:13b,13b,8.8,1.3M,,general,"Wizard Vicuna Uncensored is a 7B, 13B, and 30B parameter model based on Llama 2 uncensored by Eric Hartford."
-wizard-vicuna-uncensored,wizard-vicuna-uncensored:30b,30b,19.0,1.3M,,general,"Wizard Vicuna Uncensored is a 7B, 13B, and 30B parameter model based on Llama 2 uncensored by Eric Hartford."
+wizard-vicuna-uncensored,wizard-vicuna-uncensored:7b,7b,5.2,1.4M,,general,"Wizard Vicuna Uncensored is a 7B, 13B, and 30B parameter model based on Llama 2 uncensored by Eric Hartford."
+wizard-vicuna-uncensored,wizard-vicuna-uncensored:13b,13b,8.8,1.4M,,general,"Wizard Vicuna Uncensored is a 7B, 13B, and 30B parameter model based on Llama 2 uncensored by Eric Hartford."
+wizard-vicuna-uncensored,wizard-vicuna-uncensored:30b,30b,19.0,1.4M,,general,"Wizard Vicuna Uncensored is a 7B, 13B, and 30B parameter model based on Llama 2 uncensored by Eric Hartford."
 vicuna,vicuna:7b,7b,5.2,1.3M,,general,General use chat model based on Llama and Llama 2 with 2K to 16K context sizes.
 vicuna,vicuna:13b,13b,8.8,1.3M,,general,General use chat model based on Llama and Llama 2 with 2K to 16K context sizes.
 vicuna,vicuna:33b,33b,20.8,1.3M,,general,General use chat model based on Llama and Llama 2 with 2K to 16K context sizes.
@@ -221,11 +221,11 @@ deepscaler,deepscaler:1.5b,1.5b,1.9,1.3M,,general|reasoning,A fine-tuned version
 neural-chat,neural-chat:7b,7b,5.2,1.3M,,general,A fine-tuned model based on Mistral with good coverage of domain and language.
 deepseek-v2,deepseek-v2:16b,16b,10.6,1.3M,,general,"A strong, economical, and efficient Mixture-of-Experts language model."
 deepseek-v2,deepseek-v2:236b,236b,142.6,1.3M,,general,"A strong, economical, and efficient Mixture-of-Experts language model."
-wizardlm2,wizardlm2:7b,7b,5.2,1.2M,,general|reasoning,"State of the art large language model from Microsoft AI with improved performance on complex chat, multilingual, reasoning and agent use cases."
-wizardlm2,wizardlm2:8x22b,8x22b,106.6,1.2M,,general|reasoning,"State of the art large language model from Microsoft AI with improved performance on complex chat, multilingual, reasoning and agent use cases."
 falcon,falcon:7b,7b,5.2,1.2M,,general,"A large language model built by the Technology Innovation Institute (TII) for use in summarization, text generation, and chat bots."
 falcon,falcon:40b,40b,25.0,1.2M,,general,"A large language model built by the Technology Innovation Institute (TII) for use in summarization, text generation, and chat bots."
 falcon,falcon:180b,180b,109.0,1.2M,,general,"A large language model built by the Technology Innovation Institute (TII) for use in summarization, text generation, and chat bots."
+wizardlm2,wizardlm2:7b,7b,5.2,1.2M,,general|reasoning,"State of the art large language model from Microsoft AI with improved performance on complex chat, multilingual, reasoning and agent use cases."
+wizardlm2,wizardlm2:8x22b,8x22b,106.6,1.2M,,general|reasoning,"State of the art large language model from Microsoft AI with improved performance on complex chat, multilingual, reasoning and agent use cases."
 llava-phi3,llava-phi3:3.8b,3.8b,3.28,1.2M,vision,general|vision,A new small LLaVA model fine-tuned from Phi 3 Mini.
 llama2-chinese,llama2-chinese:7b,7b,5.2,1.2M,,general,Llama 2 based model fine tuned to improve Chinese dialogue ability.
 llama2-chinese,llama2-chinese:13b,13b,8.8,1.2M,,general,Llama 2 based model fine tuned to improve Chinese dialogue ability.
@@ -279,9 +279,9 @@ llama3-groq-tool-use,llama3-groq-tool-use:8b,8b,5.8,1.1M,tools,general,A series 
 llama3-groq-tool-use,llama3-groq-tool-use:70b,70b,43.0,1.1M,tools,general,A series of models from Groq that represent a significant advancement in open-source AI capabilities for tool use/function calling.
 phind-codellama,phind-codellama:34b,34b,21.4,1M,,coding|general,Code generation model based on Code Llama.
 starling-lm,starling-lm:7b,7b,5.2,1M,,general,Starling is a large language model trained by reinforcement learning from AI feedback focused on improving chatbot helpfulness.
-solar,solar:10.7b,10.7b,7.42,1M,,general,"A compact, yet powerful 10.7B large language model designed for single-turn conversation."
 nemotron-3-nano,nemotron-3-nano:4b,4b,3.4,1M,tools|thinking,general|reasoning,"Nemotron-3-Nano is a new Standard for Efficient, Open, and Intelligent Agentic Models, now updated with a 4B parameter count model."
 nemotron-3-nano,nemotron-3-nano:30b,30b,19.0,1M,tools|thinking,general|reasoning,"Nemotron-3-Nano is a new Standard for Efficient, Open, and Intelligent Agentic Models, now updated with a 4B parameter count model."
+solar,solar:10.7b,10.7b,7.42,1M,,general,"A compact, yet powerful 10.7B large language model designed for single-turn conversation."
 granite3-moe,granite3-moe:1b,1b,1.6,1M,tools,general,The IBM Granite 1B and 3B models are the first mixture of experts (MoE) Granite models from IBM designed for low latency usage.
 granite3-moe,granite3-moe:3b,3b,2.8,1M,tools,general,The IBM Granite 1B and 3B models are the first mixture of experts (MoE) Granite models from IBM designed for low latency usage.
 stable-beluga,stable-beluga:7b,7b,5.2,1M,,general,Llama 2 based model fine tuned on an Orca-style dataset. Originally called Free Willy.
@@ -290,173 +290,173 @@ stable-beluga,stable-beluga:70b,70b,43.0,1M,,general,Llama 2 based model fine tu
 shieldgemma,shieldgemma:2b,2b,2.2,1M,,general,ShieldGemma is set of instruction tuned models for evaluating the safety of text prompt input and text output responses against a set of defined safety policies.
 shieldgemma,shieldgemma:9b,9b,6.4,1M,,general,ShieldGemma is set of instruction tuned models for evaluating the safety of text prompt input and text output responses against a set of defined safety policies.
 shieldgemma,shieldgemma:27b,27b,17.2,1M,,general,ShieldGemma is set of instruction tuned models for evaluating the safety of text prompt input and text output responses against a set of defined safety policies.
-orca2,orca2:7b,7b,5.2,995.8K,,general|reasoning,"Orca 2 is built by Microsoft research, and are a fine-tuned version of Meta's Llama 2 models. The model is designed to excel particularly in reasoning."
-orca2,orca2:13b,13b,8.8,995.8K,,general|reasoning,"Orca 2 is built by Microsoft research, and are a fine-tuned version of Meta's Llama 2 models. The model is designed to excel particularly in reasoning."
-deepcoder,deepcoder:1.5b,1.5b,1.9,994.4K,,coding|general|reasoning,"DeepCoder is a fully open-Source 14B coder model at O3-mini level, with a 1.5B version also available."
-deepcoder,deepcoder:14b,14b,9.4,994.4K,,coding|general|reasoning,"DeepCoder is a fully open-Source 14B coder model at O3-mini level, with a 1.5B version also available."
-wizardlm,wizardlm,default,4.0,993K,,general,General use model based on Llama 2.
-reader-lm,reader-lm:0.5b,0.5b,1.3,985.4K,,general,"A series of models that convert HTML content to Markdown content, which is useful for content conversion tasks."
-reader-lm,reader-lm:1.5b,1.5b,1.9,985.4K,,general,"A series of models that convert HTML content to Markdown content, which is useful for content conversion tasks."
-paraphrase-multilingual,paraphrase-multilingual,default,4.0,970.2K,,general,Sentence-transformers model that can be used for tasks like clustering or semantic search. embedding 278m
-llama-pro,llama-pro,default,4.0,960.7K,,general,"An expansion of Llama 2 that specializes in integrating both general language understanding and domain-specific knowledge, particularly in programming and mathematics."
-mistral-small3.1,mistral-small3.1:24b,24b,15.4,952.4K,vision|tools,general|vision,"Building upon Mistral Small 3, Mistral Small 3.1 (2503) adds state-of-the-art vision understanding and enhances long context capabilities up to 128k tokens without compromising text performance."
-yarn-mistral,yarn-mistral:7b,7b,5.2,949.5K,,general,An extension of Mistral to support context windows of 64K or 128K.
-nexusraven,nexusraven:13b,13b,8.8,942.7K,,general,Nexus Raven is a 13B instruction tuned model for function calling tasks.
-meditron,meditron:7b,7b,5.2,939.1K,,general,Open-source medical large language model adapted from Llama 2 to the medical domain.
-meditron,meditron:70b,70b,43.0,939.1K,,general,Open-source medical large language model adapted from Llama 2 to the medical domain.
-bakllava,bakllava:7b,7b,5.2,927K,vision,general|vision,BakLLaVA is a multimodal model consisting of the Mistral 7B base model augmented with the LLaVA architecture.
-nemotron-3.5-lightning,nemotron-3.5-lightning:30b,30b,19.0,909.3K,tools|thinking,general|reasoning,NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.
-command-r-plus,command-r-plus:104b,104b,63.4,848.1K,tools,general,"Command R+ is a powerful, scalable large language model purpose-built to excel at real-world enterprise use cases."
-exaone-deep,exaone-deep:2.4b,2.4b,2.44,800.4K,,coding|general|reasoning,"EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research."
-exaone-deep,exaone-deep:7.8b,7.8b,5.68,800.4K,,coding|general|reasoning,"EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research."
-exaone-deep,exaone-deep:32b,32b,20.2,800.4K,,coding|general|reasoning,"EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research."
-ornith,ornith:9b,9b,6.4,786.8K,tools|thinking,coding|general|reasoning,A self-improving family of open-source models for agentic coding
-ornith,ornith:35b,35b,22.0,786.8K,tools|thinking,coding|general|reasoning,A self-improving family of open-source models for agentic coding
-tinydolphin,tinydolphin:1.1b,1.1b,1.66,760.5K,,general,An experimental 1.1B parameter model trained on the new Dolphin 2.8 dataset by Eric Hartford and based on TinyLlama.
-deepseek-v3.1,deepseek-v3.1:671b,671b,403.6,758K,tools|thinking,general|reasoning,DeepSeek-V3.1-Terminus is a hybrid model that supports both thinking mode and non-thinking mode.
-medllama2,medllama2:7b,7b,5.2,757.4K,,general,Fine-tuned Llama 2 model to answer medical questions based on an open source medical dataset.
-nemotron-mini,nemotron-mini:4b,4b,3.4,749K,tools,general,"A commercial-friendly small language model by NVIDIA optimized for roleplay, RAG QA, and function calling."
-nemotron3,nemotron3:33b,33b,20.8,748K,vision|tools|thinking|audio,audio|general|reasoning|vision,"NVIDIA Nemotron 3 Nano Omni is a multimodal large language model that unifies video, audio, image, and text understanding to support enterprise-grade Q&A, summarization, transcription, and document intelligence workflows."
-codegeex4,codegeex4:9b,9b,6.4,722K,,coding|general,"A versatile model for AI software development scenarios, including code completion."
-deepseek-ocr,deepseek-ocr:3b,3b,2.8,704K,vision,general|vision,DeepSeek-OCR is a vision-language model that can perform token-efficient OCR.
-opencoder,opencoder:1.5b,1.5b,1.9,698.6K,,coding|general,"OpenCoder is an open and reproducible code LLM family which includes 1.5B and 8B models, supporting chat in English and Chinese languages."
-opencoder,opencoder:8b,8b,5.8,698.6K,,coding|general,"OpenCoder is an open and reproducible code LLM family which includes 1.5B and 8B models, supporting chat in English and Chinese languages."
-wizardlm-uncensored,wizardlm-uncensored:13b,13b,8.8,678.1K,,general,Uncensored version of Wizard LM model
-nemotron,nemotron:70b,70b,43.0,656.4K,tools,general,Llama-3.1-Nemotron-70B-Instruct is a large language model customized by NVIDIA to improve the helpfulness of LLM generated responses to user queries.
-granite4.1,granite4.1:3b,3b,2.8,652.8K,tools,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, and structured JSON output. Released under Apache 2.0 license."
-granite4.1,granite4.1:8b,8b,5.8,652.8K,tools,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, and structured JSON output. Released under Apache 2.0 license."
-granite4.1,granite4.1:30b,30b,19.0,652.8K,tools,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, and structured JSON output. Released under Apache 2.0 license."
-reflection,reflection:70b,70b,43.0,644.1K,,general|reasoning,A high-performing model trained with a new technique called Reflection-tuning that teaches a LLM to detect mistakes in its reasoning and correct course.
-codeup,codeup:13b,13b,8.8,626.2K,,coding|general,Great code generation model based on Llama2.
-athene-v2,athene-v2:72b,72b,44.2,620.6K,tools,coding|general,"Athene-V2 is a 72B parameter model which excels at code completion, mathematics, and log extraction tasks."
-nous-hermes2-mixtral,nous-hermes2-mixtral:8x7b,8x7b,34.6,619.8K,,general,"The Nous Hermes 2 model from Nous Research, now trained over Mixtral."
-qwen3-next,qwen3-next:80b,80b,49.0,619.6K,tools|thinking,general|reasoning,The first installment in the Qwen3-Next series with strong performance in terms of both parameter efficiency and inference speed.
-exaone3.5,exaone3.5:2.4b,2.4b,2.44,619.5K,,general,"EXAONE 3.5 is a collection of instruction-tuned bilingual (English and Korean) generative models ranging from 2.4B to 32B parameters, developed and released by LG AI Research."
-exaone3.5,exaone3.5:7.8b,7.8b,5.68,619.5K,,general,"EXAONE 3.5 is a collection of instruction-tuned bilingual (English and Korean) generative models ranging from 2.4B to 32B parameters, developed and released by LG AI Research."
-exaone3.5,exaone3.5:32b,32b,20.2,619.5K,,general,"EXAONE 3.5 is a collection of instruction-tuned bilingual (English and Korean) generative models ranging from 2.4B to 32B parameters, developed and released by LG AI Research."
-megadolphin,megadolphin:120b,120b,73.0,598.3K,,general,MegaDolphin-2.2-120b is a transformation of Dolphin-2.2-70b created by interleaving the model with itself.
-everythinglm,everythinglm:13b,13b,8.8,598.2K,,general,Uncensored Llama2 based model with support for a 16K context window.
-nuextract,nuextract:3.8b,3.8b,3.28,593.6K,,general,"A 3.8B model fine-tuned on a private high-quality synthetic dataset for information extraction, based on Phi-3."
-solar-pro,solar-pro:22b,22b,14.2,589.1K,,general,Solar Pro Preview: an advanced large language model (LLM) with 22 billion parameters designed to fit into a single GPU
-mathstral,mathstral:7b,7b,5.2,587.7K,,general|reasoning,MathΣtral: a 7B model designed for math reasoning and scientific discovery by Mistral AI.
-magicoder,magicoder:7b,7b,5.2,585.9K,,coding|general,"🎩 Magicoder is a family of 7B parameter models trained on 75K synthetic instruction data using OSS-Instruct, a novel approach to enlightening LLMs with open-source code snippets."
-notus,notus:7b,7b,5.2,572K,,general,A 7B chat model fine-tuned with high-quality data and based on Zephyr.
-falcon2,falcon2:11b,11b,7.6,568.7K,,general,Falcon2 is an 11B parameters causal decoder-only model built by TII and trained over 5T tokens.
-notux,notux:8x7b,8x7b,34.6,567.8K,,general,"A top-performing mixture of experts model, fine-tuned with high-quality data."
-stablelm-zephyr,stablelm-zephyr:3b,3b,2.8,566.9K,,general,"A lightweight chat model allowing accurate, and responsive output without requiring high-end hardware."
-bespoke-minicheck,bespoke-minicheck:7b,7b,5.2,560.7K,,general,A state-of-the-art fact-checking model developed by Bespoke Labs.
-duckdb-nsql,duckdb-nsql:7b,7b,5.2,556.6K,,coding|general,7B parameter text-to-SQL model made by MotherDuck and Numbers Station.
-firefunction-v2,firefunction-v2:70b,70b,43.0,553.1K,tools,general,"An open weights function calling model based on Llama 3, competitive with GPT-4o function calling capabilities."
-mistrallite,mistrallite:7b,7b,5.2,552K,,general,MistralLite is a fine-tuned model based on Mistral with enhanced capabilities of processing long contexts.
-minimax-m3,minimax-m3,default,4.0,545.7K,vision|tools|thinking|cloud,coding|general|reasoning|vision,MiniMax M3: Coding & Agentic Frontier. 1M context window. Native Multimodality.
-wizard-vicuna,wizard-vicuna:13b,13b,8.8,545.4K,,general,Wizard Vicuna is a 13B parameter model based on Llama 2 trained by MelodysDreamj.
-open-orca-platypus2,open-orca-platypus2:13b,13b,8.8,537.6K,,coding|general,Merge of the Open Orca OpenChat model and the Garage-bAInd Platypus 2 model. Designed for chat and code generation.
-rnj-1,rnj-1:8b,8b,5.8,534K,tools,coding|general,"Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models."
-codebooga,codebooga:34b,34b,21.4,530.2K,,coding|general,A high-performing code instruct model created by merging two existing code models.
-deepseek-v4-pro,deepseek-v4-pro,default,4.0,516.1K,tools|thinking|cloud,general|reasoning,DeepSeek-V4-Pro is a frontier Mixture-of-Experts model with a large context window and three reasoning modes.
-kimi-k2.6,kimi-k2.6,default,4.0,515.2K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration."
-goliath,goliath,default,4.0,510.9K,,general,A language model created by combining two fine-tuned Llama 2 70B models into one.
-snowflake-arctic-embed2,snowflake-arctic-embed2,default,4.0,506.4K,,embedding,Snowflake's frontier embedding model. Arctic Embed 2.0 adds multilingual support without sacrificing English performance or scalability. embedding 568m
-ornith-1.5,ornith-1.5:9b,9b,6.4,490.6K,vision|tools|thinking,general|reasoning|vision,"Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
-ornith-1.5,ornith-1.5:35b,35b,22.0,490.6K,vision|tools|thinking,general|reasoning|vision,"Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
-ornith-1.5,ornith-1.5:122b,122b,74.2,490.6K,vision|tools|thinking,general|reasoning|vision,"Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
-ornith-1.5,ornith-1.5:397b,397b,239.2,490.6K,vision|tools|thinking,general|reasoning|vision,"Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
-olmo-3,olmo-3:7b,7b,5.2,490.5K,tools|thinking,general|reasoning,Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.
-olmo-3,olmo-3:32b,32b,20.2,490.5K,tools|thinking,general|reasoning,Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.
-medgemma,medgemma:4b,4b,3.4,490.1K,vision,general|vision,MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension.
-medgemma,medgemma:27b,27b,17.2,490.1K,vision,general|vision,MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension.
-granite3.2,granite3.2:2b,2b,2.2,485.8K,tools,general,Granite-3.2 is a family of long-context AI models from IBM Granite fine-tuned for thinking capabilities.
-granite3.2,granite3.2:8b,8b,5.8,485.8K,tools,general,Granite-3.2 is a family of long-context AI models from IBM Granite fine-tuned for thinking capabilities.
-sailor2,sailor2:1b,1b,1.6,446.2K,,general,"Sailor2 are multilingual language models made for South-East Asia. Available in 1B, 8B, and 20B parameter sizes."
-sailor2,sailor2:8b,8b,5.8,446.2K,,general,"Sailor2 are multilingual language models made for South-East Asia. Available in 1B, 8B, and 20B parameter sizes."
-sailor2,sailor2:20b,20b,13.0,446.2K,,general,"Sailor2 are multilingual language models made for South-East Asia. Available in 1B, 8B, and 20B parameter sizes."
-mistral-medium-3.5,mistral-medium-3.5:128b,128b,77.8,444.4K,vision|tools|thinking,coding|general|reasoning|vision,"Mistral Medium 3.5 is the first flagship model of Mistral AI that merged instruction-following, reasoning, and coding in a single set of 128B weights."
-r1-1776,r1-1776:70b,70b,43.0,441.7K,,general|reasoning,"A version of the DeepSeek-R1 model that has been post trained to provide unbiased, accurate, and factual information by Perplexity."
-r1-1776,r1-1776:671b,671b,403.6,441.7K,,general|reasoning,"A version of the DeepSeek-R1 model that has been post trained to provide unbiased, accurate, and factual information by Perplexity."
-granite-embedding,granite-embedding,default,4.0,435.9K,,embedding,"The IBM Granite Embedding 30M and 278M models models are text-only dense biencoder embedding models, with 30M available in English only and 278M serving multilingual use cases. embedding 30m 278m"
-tulu3,tulu3:8b,8b,5.8,432.4K,,coding|general,"Tülu 3 is a leading instruction following model family, offering fully open-source data, code, and recipes by the The Allen Institute for AI."
-tulu3,tulu3:70b,70b,43.0,432.4K,,coding|general,"Tülu 3 is a leading instruction following model family, offering fully open-source data, code, and recipes by the The Allen Institute for AI."
-muse-glimmer,muse-glimmer:30b,30b,19.0,412.1K,vision|tools|thinking,general|reasoning|vision,"Meta's latest open model built for always-on local agents. 30B parameters, licensed under Apache 2.0 and runs on a single GPU — tuned for tool use, long tasks, and failure recovery."
-dbrx,dbrx:132b,132b,80.2,389.3K,,general,"DBRX is an open, general-purpose LLM created by Databricks."
-glm-5.2,glm-5.2,default,4.0,387.3K,tools|thinking|cloud,general|reasoning,GLM-5.2 is Z.ai’s flagship model for the era of long-horizon tasks.
-devstral-2,devstral-2:123b,123b,74.8,384.3K,tools,coding|general,"123B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents."
-granite3-guardian,granite3-guardian:2b,2b,2.2,359.8K,,general,The IBM Granite Guardian 3.0 2B and 8B models are designed to detect risks in prompts and/or responses.
-granite3-guardian,granite3-guardian:8b,8b,5.8,359.8K,,general,The IBM Granite Guardian 3.0 2B and 8B models are designed to detect risks in prompts and/or responses.
-command-r7b,command-r7b:7b,7b,5.2,359.1K,tools,general,"The smallest model in Cohere's R series delivers top-tier speed, efficiency, and quality to build powerful AI applications on commodity GPUs and edge devices."
-lfm2.5,lfm2.5:8b,8b,5.8,358.4K,tools|thinking,general|reasoning,"LFM2.5-8B-A1B, an edge model built for fast, reliable tool calling on consumer hardware."
-lfm2.5,lfm2.5:24b,24b,15.4,358.4K,tools|thinking,general|reasoning,"LFM2.5-8B-A1B, an edge model built for fast, reliable tool calling on consumer hardware."
-alfred,alfred:40b,40b,25.0,348.6K,,general,A robust conversational model designed to be used for both chat and instruct use cases.
-phi4-mini-reasoning,phi4-mini-reasoning:3.8b,3.8b,3.28,333.6K,,general|reasoning,Phi 4 mini reasoning is a lightweight open model that balances efficiency with advanced reasoning ability.
-olmo-3.1,olmo-3.1:32b,32b,20.2,322.9K,tools|thinking,general|reasoning,Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.
-deepseek-v2.5,deepseek-v2.5:236b,236b,142.6,315K,,coding|general,An upgraded version of DeekSeek-V2 that integrates the general and coding abilities of both DeepSeek-V2-Chat and DeepSeek-Coder-V2-Instruct.
-bge-large,bge-large,default,4.0,309.9K,,general,Embedding model from BAAI mapping texts to vectors. embedding 335m
-granite4.2,granite4.2:3b,3b,2.8,306.6K,,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, thinking and structured JSON output. Released under Apache 2.0 license."
-granite4.2,granite4.2:8b,8b,5.8,306.6K,,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, thinking and structured JSON output. Released under Apache 2.0 license."
-granite4.2,granite4.2:30b,30b,19.0,306.6K,,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, thinking and structured JSON output. Released under Apache 2.0 license."
-glm-5.3,glm-5.3,default,4.0,303.7K,tools|thinking|cloud,coding|general|reasoning,"Z.ai's flagship model and the most capable open-weights model for coding, with major gains on long-horizon agentic tasks."
-smallthinker,smallthinker:3b,3b,2.8,279.9K,,general|reasoning,A new small reasoning model fine-tuned from the Qwen 2.5 3B Instruct model.
-kimi-k2.7-code,kimi-k2.7-code,default,4.0,265.8K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Kimi K2.7 Code is Moonshot AI's coding-focused agentic model built upon Kimi K2.6, with substantial improvements on real-world long-horizon coding tasks and roughly 30% lower thinking-token usage."
-qwen3.8-flash-next,qwen3.8-flash-next,default,4.0,261.8K,vision|tools|thinking,general|reasoning|vision,This experimental preview of the architecture that will underpin Qwen4.
-command-a,command-a:111b,111b,67.6,252.1K,tools,general,"111 billion parameter model optimized for demanding enterprises that require fast, secure, and high-quality AI"
-cogito-2.1,cogito-2.1:671b,671b,403.6,244.4K,,general,The Cogito v2.1 LLMs are instruction tuned generative models. All models are released under MIT license for commercial use.
-deepseek-v4.1-flash,deepseek-v4.1-flash,default,4.0,241.3K,vision|tools|thinking|cloud,general|reasoning|vision,"Designed for greater capability, faster inference, higher throughput, and scaling to larger models."
-medgemma1.5,medgemma1.5:4b,4b,3.4,233K,vision,general|vision,MedGemma 1.5 4B is an updated version of the MedGemma 4B model.
-marco-o1,marco-o1:7b,7b,5.2,232.9K,,general|reasoning,An open large reasoning model for real-world solutions by the Alibaba International Digital Commerce Group (AIDC-AI).
-glm-5.3-flash,glm-5.3-flash,default,4.0,228.1K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Z.ai's first natively multimodal model, approaching Claude Opus 4.8 on coding and agentic benchmarks with just 18B active parameters."
-functiongemma,functiongemma,default,4.0,221.9K,,general,FunctionGemma is a specialized version of Google's Gemma 3 270M model fine-tuned explicitly for function calling. tools 270m
-command-r7b-arabic,command-r7b-arabic:7b,7b,5.2,218.8K,tools,general,A new state-of-the-art version of the lightweight Command R7B model that excels in advanced Arabic language capabilities for enterprises in the Middle East and Northern Africa.
-laguna-s-2.1,laguna-s-2.1,default,4.0,198.8K,tools|thinking,general|reasoning,"Our most capable model to date, designed for long-horizon work. 70.2% on Terminal-Bench 2.1 at 118B-A8B."
-bonsai-2,bonsai-2:2b,2b,2.2,189.8K,vision|tools|thinking,general|reasoning|vision,Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.
-bonsai-2,bonsai-2:4b,4b,3.4,189.8K,vision|tools|thinking,general|reasoning|vision,Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.
-bonsai-2,bonsai-2:9b,9b,6.4,189.8K,vision|tools|thinking,general|reasoning|vision,Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.
-bonsai-2,bonsai-2:27b,27b,17.2,189.8K,vision|tools|thinking,general|reasoning|vision,Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.
-gpt-oss-safeguard,gpt-oss-safeguard:20b,20b,13.0,181.1K,tools|thinking,general|reasoning,gpt-oss-safeguard-20b and gpt-oss-safeguard-120b are safety reasoning models built-upon gpt-oss
-gpt-oss-safeguard,gpt-oss-safeguard:120b,120b,73.0,181.1K,tools|thinking,general|reasoning,gpt-oss-safeguard-20b and gpt-oss-safeguard-120b are safety reasoning models built-upon gpt-oss
-embeddinggemma-2,embeddinggemma-2,default,4.0,174.9K,,embedding,EmbeddingGemma 2 is a multimodal embedding model from Google built on the Gemma 4 architecture. vision embedding audio 270m 440m 570m 740m
-tev1,tev1:0.8b,0.8b,1.48,173.8K,thinking,general|reasoning,A 4B decision model from Together AI for fast classification. tools decision
-tev1,tev1:4b,4b,3.4,173.8K,thinking,general|reasoning,A 4B decision model from Together AI for fast classification. tools decision
-nemotron-cascade-2,nemotron-cascade-2:30b,30b,19.0,173.8K,tools|thinking,general|reasoning,An open 30B MoE model from NVIDIA with 3B activated parameters that delivers strong reasoning and agentic capabilities.
-phonon,phonon,default,4.0,158K,,general,"Phonon is Gradium’s text-to-speech family. It turns written text into spoken audio as it generates, making it useful for reading assistant replies, narrating passages, and adding a voice to local apps."
-laguna-xs-2.1,laguna-xs-2.1,default,4.0,157.9K,tools|thinking,coding|general|reasoning,Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.
-nemotron-3-ultra,nemotron-3-ultra,default,4.0,156K,tools|thinking|cloud,general|reasoning,NVIDIA Nemotron 3 Ultra is built for high-throughput reasoning and long-running agent workflows.
-strands-decider,strands-decider:2b,2b,2.2,126K,,general,"A 2B decision model from Strands Agents for fast classification, routing, and scoring. decision"
-kimi-k3,kimi-k3,default,4.0,123.4K,vision|tools|thinking|cloud,general|reasoning|vision,"Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date."
-mimo-v2.6,mimo-v2.6:9b,9b,6.4,118.7K,vision|tools|thinking,coding|general|reasoning|vision,MiMo-V2.6-Distill-Qwen-9B is Xiaomi MiMo’s 9B model for code and agent workflows
-clef,clef:27b,27b,17.2,115.1K,cloud,general,Clef is a 27B multimodal model created by Cloudflare that turns a state and a schema of typed questions into decisions. vision decision
-d3,d3:2b,2b,2.2,108.2K,,general,"Turn text, structured data, and images into scored choices, yes/no answers, and ratings. vision decision"
-d3,d3:4b,4b,3.4,108.2K,,general,"Turn text, structured data, and images into scored choices, yes/no answers, and ratings. vision decision"
-d3,d3:9b,9b,6.4,108.2K,,general,"Turn text, structured data, and images into scored choices, yes/no answers, and ratings. vision decision"
-d3,d3:27b,27b,17.2,108.2K,,general,"Turn text, structured data, and images into scored choices, yes/no answers, and ratings. vision decision"
-nimble,nimble:9b,9b,6.4,103.8K,thinking,general|reasoning,"A 9B decision model from Bespoke Labs for fast, typed classification. tools decision"
-flint,flint:40b,40b,25.0,103.7K,tools|thinking,coding|general|reasoning,"Flint is a 39.8 billion-parameter mixture-of-experts model from Recursive, built for coding agents."
-lfm3,lfm3:1.7b,1.7b,2.02,101.4K,tools|thinking,general|reasoning,LFM3-1.7B is a tri-hybrid model for local agents and specialized applications.
-minicpm-v4.6,minicpm-v4.6:1b,1b,1.6,100.6K,vision,general|vision,A Pocket-Sized MLLM for Ultra-Efficient Image and Video Understanding on Your Phone
-north-mini-code-1.0,north-mini-code-1.0,default,4.0,93.1K,tools|thinking,coding|general|reasoning,"North Mini Code is Cohere's first model for developers — a 30B Mixture-of-Experts model with 3B active parameters, built for agentic software engineering."
-clef-flash,clef-flash:9b,9b,6.4,91K,,general,Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions. vision decision
-d1,d1:2b,2b,2.2,80.3K,,general,"d1 is a 3B decision model from Liquid AI, built on LFM2.5-VL-3B vision decision"
-d1,d1:3b,3b,2.8,80.3K,,general,"d1 is a 3B decision model from Liquid AI, built on LFM2.5-VL-3B vision decision"
-minicpm-v4.5,minicpm-v4.5:8b,8b,5.8,79K,vision,general|vision,"A GPT-4o Level MLLM for Single Image, Multi Image and High-FPS Video Understanding on Your Phone"
-beam,beam,default,4.0,77.8K,tools|thinking|cloud,coding|general|reasoning,"Beam is an open model by Reflection designed to deliver strong performance for areas such as agentic tool use, coding and general reasoning with an emphasis on token efficient usage."
-lfm3-omni,lfm3-omni:2b,2b,2.2,74.5K,vision|tools|audio,audio|general|vision,"a single end-to-end model that understands text, images, video and audio, and answers in text and speech"
-nemotron-3.5-bolt,nemotron-3.5-bolt,default,4.0,73.7K,,coding|general|reasoning,"Nemotron 3.5 Bolt is NVIDIA’s compact vision-language model for local coding, reasoning, and tool use. vision tools thinking audio e4b"
-ripple-preview,ripple-preview:65b,65b,40.0,69K,tools|thinking,coding|general|reasoning,"65B dense model built for agentic coding, with up to 1M tokens of context."
-d1-omni,d1-omni:2b,2b,2.2,66.1K,,general,d1-omni is a multimodal 600M decision model from Liquid AI vision decision audio 600m
-lfm3-vl,lfm3-vl:2b,2b,2.2,57.6K,vision|tools|thinking,general|reasoning|vision,LFM3-VL-2B is a vision-language model for on-device visual understanding.
-autotrust-jev,autotrust-jev:9b,9b,6.4,56.1K,,general,"AutoTrust’s decision models return choices, yes/no probabilities, and ratings for the questions you supply vision decision"
-autotrust-jev,autotrust-jev:35b,35b,22.0,56.1K,,general,"AutoTrust’s decision models return choices, yes/no probabilities, and ratings for the questions you supply vision decision"
-minimax-m3.1-flash,minimax-m3.1-flash,default,4.0,55K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
-granite4.1-guardian,granite4.1-guardian:8b,8b,5.8,52.2K,tools|thinking,general|reasoning,Granite Guardian 4.1 is a specialized safety and judging model from IBM Research that evaluates whether LLM prompts and responses meet specified harm criteria.
-lfm3-audio,lfm3-audio:2b,2b,2.2,49.5K,vision|tools|audio,audio|general|vision,"LFM3-Audio-2B is a compact, fully featured audio model."
-pplx-decider,pplx-decider:27b,27b,17.2,49.1K,,general,"pplx-decider is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B vision decision"
-laguna-xs.2,laguna-xs.2,default,4.0,48.1K,tools|thinking,coding|general|reasoning,Laguna XS.2 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.
-pplx-decider-flash,pplx-decider-flash:4b,4b,3.4,44.8K,,general,"pplx-decider-flash is a 4B decision model from Perplexity, built on Qwen3.5-4B vision decision"
-nemotron-3.5-super,nemotron-3.5-super:120b,120b,73.0,39.6K,vision|tools|thinking,coding|general|reasoning|vision,"Nemotron 3.5 Super is NVIDIA’s vision-language model for coding, reasoning, tool use, and document understanding"
-mistral-large-4,mistral-large-4,default,4.0,33K,vision|tools|thinking|cloud,general|reasoning|vision,"Mistral Large 4 is Mistral's open-weight, general-purpose multimodal model. Its granular Mixture-of-Experts design activates 52B of 1.05T total parameters, with a 1.6B vision encoder handling images."
-kev,kev,default,4.0,32.1K,,general,Kev scores answers to structured questions about a supplied text state in a single forward pass. decision
-nimble-v3,nimble-v3:9b,9b,6.4,31.7K,thinking,general|reasoning,"A 9B decision model from Bespoke Labs for fast classification, routing, and scoring. tools decision"
-laya,laya,default,4.0,30K,,general,"Laya is a 421M decision model from Convai Innovations, fine-tuned from ModernBERT-large. embedding decision"
-kimi-k3.1-pro,kimi-k3.1-pro,default,4.0,23.6K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Kimi K3.1 Pro is an open-weight, natively multimodal agentic model and our most capable 3T-class model to date, with a 1M-token context window and major gains in coding, 3D creation, financial research, and factual accuracy."
-muse-spark-open,muse-spark-open,default,4.0,23.4K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Muse Spark Open is a natively multimodal model with 816B total parameters (42B active) and a 1M-token context window. Built for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning."
-mimo-v2.6-flash,mimo-v2.6-flash,default,4.0,492,,general,"Xiaomi's efficiency-balanced MiMo-V2.6 checkpoint, with 309B total parameters, 15B active, omnimodal input, and a 1M token context. vision tools thinking cloud 8,"
-mimo-v2.6-pro,mimo-v2.6-pro,default,4.0,910,,general,"Xiaomi's flagship MiMo-V2.6 checkpoint, with 1.02T total parameters, 42B active, omnimodal input, and a 1M token context. vision tools thinking cloud 7,"
-inkling-2-small,inkling-2-small,default,4.0,476,,coding|general,"594B Mixture-of-Experts model (17B active) with image input and up to 1M tokens of context, built for agentic coding and knowledge work. vision tools thinking cloud 4,"
+orca2,orca2:7b,7b,5.2,996.8K,,general|reasoning,"Orca 2 is built by Microsoft research, and are a fine-tuned version of Meta's Llama 2 models. The model is designed to excel particularly in reasoning."
+orca2,orca2:13b,13b,8.8,996.8K,,general|reasoning,"Orca 2 is built by Microsoft research, and are a fine-tuned version of Meta's Llama 2 models. The model is designed to excel particularly in reasoning."
+deepcoder,deepcoder:1.5b,1.5b,1.9,995.5K,,coding|general|reasoning,"DeepCoder is a fully open-Source 14B coder model at O3-mini level, with a 1.5B version also available."
+deepcoder,deepcoder:14b,14b,9.4,995.5K,,coding|general|reasoning,"DeepCoder is a fully open-Source 14B coder model at O3-mini level, with a 1.5B version also available."
+wizardlm,wizardlm,default,4.0,994K,,general,General use model based on Llama 2.
+reader-lm,reader-lm:0.5b,0.5b,1.3,986.4K,,general,"A series of models that convert HTML content to Markdown content, which is useful for content conversion tasks."
+reader-lm,reader-lm:1.5b,1.5b,1.9,986.4K,,general,"A series of models that convert HTML content to Markdown content, which is useful for content conversion tasks."
+paraphrase-multilingual,paraphrase-multilingual,default,4.0,970.9K,,general,Sentence-transformers model that can be used for tasks like clustering or semantic search. embedding 278m
+llama-pro,llama-pro,default,4.0,961.4K,,general,"An expansion of Llama 2 that specializes in integrating both general language understanding and domain-specific knowledge, particularly in programming and mathematics."
+mistral-small3.1,mistral-small3.1:24b,24b,15.4,961.2K,vision|tools,general|vision,"Building upon Mistral Small 3, Mistral Small 3.1 (2503) adds state-of-the-art vision understanding and enhances long context capabilities up to 128k tokens without compromising text performance."
+yarn-mistral,yarn-mistral:7b,7b,5.2,950.2K,,general,An extension of Mistral to support context windows of 64K or 128K.
+nexusraven,nexusraven:13b,13b,8.8,943.4K,,general,Nexus Raven is a 13B instruction tuned model for function calling tasks.
+meditron,meditron:7b,7b,5.2,940K,,general,Open-source medical large language model adapted from Llama 2 to the medical domain.
+meditron,meditron:70b,70b,43.0,940K,,general,Open-source medical large language model adapted from Llama 2 to the medical domain.
+bakllava,bakllava:7b,7b,5.2,927.8K,vision,general|vision,BakLLaVA is a multimodal model consisting of the Mistral 7B base model augmented with the LLaVA architecture.
+nemotron-3.5-lightning,nemotron-3.5-lightning:30b,30b,19.0,911.8K,tools|thinking,general|reasoning,NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.
+command-r-plus,command-r-plus:104b,104b,63.4,848.9K,tools,general,"Command R+ is a powerful, scalable large language model purpose-built to excel at real-world enterprise use cases."
+exaone-deep,exaone-deep:2.4b,2.4b,2.44,801.2K,,coding|general|reasoning,"EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research."
+exaone-deep,exaone-deep:7.8b,7.8b,5.68,801.2K,,coding|general|reasoning,"EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research."
+exaone-deep,exaone-deep:32b,32b,20.2,801.2K,,coding|general|reasoning,"EXAONE Deep exhibits superior capabilities in various reasoning tasks including math and coding benchmarks, ranging from 2.4B to 32B parameters developed and released by LG AI Research."
+ornith,ornith:9b,9b,6.4,789.2K,tools|thinking,coding|general|reasoning,A self-improving family of open-source models for agentic coding
+ornith,ornith:35b,35b,22.0,789.2K,tools|thinking,coding|general|reasoning,A self-improving family of open-source models for agentic coding
+tinydolphin,tinydolphin:1.1b,1.1b,1.66,761K,,general,An experimental 1.1B parameter model trained on the new Dolphin 2.8 dataset by Eric Hartford and based on TinyLlama.
+deepseek-v3.1,deepseek-v3.1:671b,671b,403.6,758.7K,tools|thinking,general|reasoning,DeepSeek-V3.1-Terminus is a hybrid model that supports both thinking mode and non-thinking mode.
+medllama2,medllama2:7b,7b,5.2,757.9K,,general,Fine-tuned Llama 2 model to answer medical questions based on an open source medical dataset.
+nemotron-mini,nemotron-mini:4b,4b,3.4,749.6K,tools,general,"A commercial-friendly small language model by NVIDIA optimized for roleplay, RAG QA, and function calling."
+nemotron3,nemotron3:33b,33b,20.8,748.5K,vision|tools|thinking|audio,audio|general|reasoning|vision,"NVIDIA Nemotron 3 Nano Omni is a multimodal large language model that unifies video, audio, image, and text understanding to support enterprise-grade Q&A, summarization, transcription, and document intelligence workflows."
+codegeex4,codegeex4:9b,9b,6.4,722.5K,,coding|general,"A versatile model for AI software development scenarios, including code completion."
+deepseek-ocr,deepseek-ocr:3b,3b,2.8,705.8K,vision,general|vision,DeepSeek-OCR is a vision-language model that can perform token-efficient OCR.
+opencoder,opencoder:1.5b,1.5b,1.9,699.7K,,coding|general,"OpenCoder is an open and reproducible code LLM family which includes 1.5B and 8B models, supporting chat in English and Chinese languages."
+opencoder,opencoder:8b,8b,5.8,699.7K,,coding|general,"OpenCoder is an open and reproducible code LLM family which includes 1.5B and 8B models, supporting chat in English and Chinese languages."
+wizardlm-uncensored,wizardlm-uncensored:13b,13b,8.8,678.6K,,general,Uncensored version of Wizard LM model
+nemotron,nemotron:70b,70b,43.0,656.8K,tools,general,Llama-3.1-Nemotron-70B-Instruct is a large language model customized by NVIDIA to improve the helpfulness of LLM generated responses to user queries.
+granite4.1,granite4.1:3b,3b,2.8,655.4K,tools,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, and structured JSON output. Released under Apache 2.0 license."
+granite4.1,granite4.1:8b,8b,5.8,655.4K,tools,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, and structured JSON output. Released under Apache 2.0 license."
+granite4.1,granite4.1:30b,30b,19.0,655.4K,tools,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, and structured JSON output. Released under Apache 2.0 license."
+reflection,reflection:70b,70b,43.0,644.6K,,general|reasoning,A high-performing model trained with a new technique called Reflection-tuning that teaches a LLM to detect mistakes in its reasoning and correct course.
+codeup,codeup:13b,13b,8.8,626.7K,,coding|general,Great code generation model based on Llama2.
+athene-v2,athene-v2:72b,72b,44.2,621.1K,tools,coding|general,"Athene-V2 is a 72B parameter model which excels at code completion, mathematics, and log extraction tasks."
+exaone3.5,exaone3.5:2.4b,2.4b,2.44,620.8K,,general,"EXAONE 3.5 is a collection of instruction-tuned bilingual (English and Korean) generative models ranging from 2.4B to 32B parameters, developed and released by LG AI Research."
+exaone3.5,exaone3.5:7.8b,7.8b,5.68,620.8K,,general,"EXAONE 3.5 is a collection of instruction-tuned bilingual (English and Korean) generative models ranging from 2.4B to 32B parameters, developed and released by LG AI Research."
+exaone3.5,exaone3.5:32b,32b,20.2,620.8K,,general,"EXAONE 3.5 is a collection of instruction-tuned bilingual (English and Korean) generative models ranging from 2.4B to 32B parameters, developed and released by LG AI Research."
+nous-hermes2-mixtral,nous-hermes2-mixtral:8x7b,8x7b,34.6,620.3K,,general,"The Nous Hermes 2 model from Nous Research, now trained over Mixtral."
+qwen3-next,qwen3-next:80b,80b,49.0,620.2K,tools|thinking,general|reasoning,The first installment in the Qwen3-Next series with strong performance in terms of both parameter efficiency and inference speed.
+megadolphin,megadolphin:120b,120b,73.0,598.7K,,general,MegaDolphin-2.2-120b is a transformation of Dolphin-2.2-70b created by interleaving the model with itself.
+everythinglm,everythinglm:13b,13b,8.8,598.6K,,general,Uncensored Llama2 based model with support for a 16K context window.
+nuextract,nuextract:3.8b,3.8b,3.28,594.3K,,general,"A 3.8B model fine-tuned on a private high-quality synthetic dataset for information extraction, based on Phi-3."
+solar-pro,solar-pro:22b,22b,14.2,589.5K,,general,Solar Pro Preview: an advanced large language model (LLM) with 22 billion parameters designed to fit into a single GPU
+mathstral,mathstral:7b,7b,5.2,588.5K,,general|reasoning,MathΣtral: a 7B model designed for math reasoning and scientific discovery by Mistral AI.
+magicoder,magicoder:7b,7b,5.2,586.4K,,coding|general,"🎩 Magicoder is a family of 7B parameter models trained on 75K synthetic instruction data using OSS-Instruct, a novel approach to enlightening LLMs with open-source code snippets."
+notus,notus:7b,7b,5.2,572.5K,,general,A 7B chat model fine-tuned with high-quality data and based on Zephyr.
+falcon2,falcon2:11b,11b,7.6,569.2K,,general,Falcon2 is an 11B parameters causal decoder-only model built by TII and trained over 5T tokens.
+notux,notux:8x7b,8x7b,34.6,568.3K,,general,"A top-performing mixture of experts model, fine-tuned with high-quality data."
+stablelm-zephyr,stablelm-zephyr:3b,3b,2.8,567.7K,,general,"A lightweight chat model allowing accurate, and responsive output without requiring high-end hardware."
+bespoke-minicheck,bespoke-minicheck:7b,7b,5.2,561.3K,,general,A state-of-the-art fact-checking model developed by Bespoke Labs.
+duckdb-nsql,duckdb-nsql:7b,7b,5.2,557K,,coding|general,7B parameter text-to-SQL model made by MotherDuck and Numbers Station.
+firefunction-v2,firefunction-v2:70b,70b,43.0,553.5K,tools,general,"An open weights function calling model based on Llama 3, competitive with GPT-4o function calling capabilities."
+mistrallite,mistrallite:7b,7b,5.2,552.4K,,general,MistralLite is a fine-tuned model based on Mistral with enhanced capabilities of processing long contexts.
+minimax-m3,minimax-m3,default,4.0,546K,vision|tools|thinking|cloud,coding|general|reasoning|vision,MiniMax M3: Coding & Agentic Frontier. 1M context window. Native Multimodality.
+wizard-vicuna,wizard-vicuna:13b,13b,8.8,545.8K,,general,Wizard Vicuna is a 13B parameter model based on Llama 2 trained by MelodysDreamj.
+open-orca-platypus2,open-orca-platypus2:13b,13b,8.8,538.1K,,coding|general,Merge of the Open Orca OpenChat model and the Garage-bAInd Platypus 2 model. Designed for chat and code generation.
+rnj-1,rnj-1:8b,8b,5.8,535.1K,tools,coding|general,"Rnj-1 is a family of 8B parameter open-weight, dense models trained from scratch by Essential AI, optimized for code and STEM with capabilities on par with SOTA open-weight models."
+codebooga,codebooga:34b,34b,21.4,530.6K,,coding|general,A high-performing code instruct model created by merging two existing code models.
+deepseek-v4-pro,deepseek-v4-pro,default,4.0,517.4K,tools|thinking|cloud,general|reasoning,DeepSeek-V4-Pro is a frontier Mixture-of-Experts model with a large context window and three reasoning modes.
+kimi-k2.6,kimi-k2.6,default,4.0,516.1K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration."
+goliath,goliath,default,4.0,511.6K,,general,A language model created by combining two fine-tuned Llama 2 70B models into one.
+snowflake-arctic-embed2,snowflake-arctic-embed2,default,4.0,507.5K,,embedding,Snowflake's frontier embedding model. Arctic Embed 2.0 adds multilingual support without sacrificing English performance or scalability. embedding 568m
+ornith-1.5,ornith-1.5:9b,9b,6.4,492.2K,vision|tools|thinking,general|reasoning|vision,"Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
+ornith-1.5,ornith-1.5:35b,35b,22.0,492.2K,vision|tools|thinking,general|reasoning|vision,"Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
+ornith-1.5,ornith-1.5:122b,122b,74.2,492.2K,vision|tools|thinking,general|reasoning|vision,"Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
+ornith-1.5,ornith-1.5:397b,397b,239.2,492.2K,vision|tools|thinking,general|reasoning|vision,"Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
+medgemma,medgemma:4b,4b,3.4,491.6K,vision,general|vision,MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension.
+medgemma,medgemma:27b,27b,17.2,491.6K,vision,general|vision,MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension.
+olmo-3,olmo-3:7b,7b,5.2,491.1K,tools|thinking,general|reasoning,Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.
+olmo-3,olmo-3:32b,32b,20.2,491.1K,tools|thinking,general|reasoning,Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.
+granite3.2,granite3.2:2b,2b,2.2,486.5K,tools,general,Granite-3.2 is a family of long-context AI models from IBM Granite fine-tuned for thinking capabilities.
+granite3.2,granite3.2:8b,8b,5.8,486.5K,tools,general,Granite-3.2 is a family of long-context AI models from IBM Granite fine-tuned for thinking capabilities.
+sailor2,sailor2:1b,1b,1.6,446.6K,,general,"Sailor2 are multilingual language models made for South-East Asia. Available in 1B, 8B, and 20B parameter sizes."
+sailor2,sailor2:8b,8b,5.8,446.6K,,general,"Sailor2 are multilingual language models made for South-East Asia. Available in 1B, 8B, and 20B parameter sizes."
+sailor2,sailor2:20b,20b,13.0,446.6K,,general,"Sailor2 are multilingual language models made for South-East Asia. Available in 1B, 8B, and 20B parameter sizes."
+mistral-medium-3.5,mistral-medium-3.5:128b,128b,77.8,444.8K,vision|tools|thinking,coding|general|reasoning|vision,"Mistral Medium 3.5 is the first flagship model of Mistral AI that merged instruction-following, reasoning, and coding in a single set of 128B weights."
+r1-1776,r1-1776:70b,70b,43.0,442.1K,,general|reasoning,"A version of the DeepSeek-R1 model that has been post trained to provide unbiased, accurate, and factual information by Perplexity."
+r1-1776,r1-1776:671b,671b,403.6,442.1K,,general|reasoning,"A version of the DeepSeek-R1 model that has been post trained to provide unbiased, accurate, and factual information by Perplexity."
+granite-embedding,granite-embedding,default,4.0,437.3K,,embedding,"The IBM Granite Embedding 30M and 278M models models are text-only dense biencoder embedding models, with 30M available in English only and 278M serving multilingual use cases. embedding 30m 278m"
+tulu3,tulu3:8b,8b,5.8,433K,,coding|general,"Tülu 3 is a leading instruction following model family, offering fully open-source data, code, and recipes by the The Allen Institute for AI."
+tulu3,tulu3:70b,70b,43.0,433K,,coding|general,"Tülu 3 is a leading instruction following model family, offering fully open-source data, code, and recipes by the The Allen Institute for AI."
+muse-glimmer,muse-glimmer:30b,30b,19.0,422.6K,vision|tools|thinking,general|reasoning|vision,"Meta's latest open model built for always-on local agents. 30B parameters, licensed under Apache 2.0 and runs on a single GPU — tuned for tool use, long tasks, and failure recovery."
+dbrx,dbrx:132b,132b,80.2,389.9K,,general,"DBRX is an open, general-purpose LLM created by Databricks."
+glm-5.2,glm-5.2,default,4.0,387.7K,tools|thinking|cloud,general|reasoning,GLM-5.2 is Z.ai’s flagship model for the era of long-horizon tasks.
+devstral-2,devstral-2:123b,123b,74.8,384.9K,tools,coding|general,"123B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents."
+lfm2.5,lfm2.5:8b,8b,5.8,362.5K,tools|thinking,general|reasoning,"LFM2.5-8B-A1B, an edge model built for fast, reliable tool calling on consumer hardware."
+lfm2.5,lfm2.5:24b,24b,15.4,362.5K,tools|thinking,general|reasoning,"LFM2.5-8B-A1B, an edge model built for fast, reliable tool calling on consumer hardware."
+granite3-guardian,granite3-guardian:2b,2b,2.2,360.1K,,general,The IBM Granite Guardian 3.0 2B and 8B models are designed to detect risks in prompts and/or responses.
+granite3-guardian,granite3-guardian:8b,8b,5.8,360.1K,,general,The IBM Granite Guardian 3.0 2B and 8B models are designed to detect risks in prompts and/or responses.
+command-r7b,command-r7b:7b,7b,5.2,359.7K,tools,general,"The smallest model in Cohere's R series delivers top-tier speed, efficiency, and quality to build powerful AI applications on commodity GPUs and edge devices."
+alfred,alfred:40b,40b,25.0,350.5K,,general,A robust conversational model designed to be used for both chat and instruct use cases.
+phi4-mini-reasoning,phi4-mini-reasoning:3.8b,3.8b,3.28,334K,,general|reasoning,Phi 4 mini reasoning is a lightweight open model that balances efficiency with advanced reasoning ability.
+olmo-3.1,olmo-3.1:32b,32b,20.2,323.2K,tools|thinking,general|reasoning,Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.
+deepseek-v2.5,deepseek-v2.5:236b,236b,142.6,315.6K,,coding|general,An upgraded version of DeekSeek-V2 that integrates the general and coding abilities of both DeepSeek-V2-Chat and DeepSeek-Coder-V2-Instruct.
+bge-large,bge-large,default,4.0,310.5K,,general,Embedding model from BAAI mapping texts to vectors. embedding 335m
+granite4.2,granite4.2:3b,3b,2.8,309.6K,,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, thinking and structured JSON output. Released under Apache 2.0 license."
+granite4.2,granite4.2:8b,8b,5.8,309.6K,,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, thinking and structured JSON output. Released under Apache 2.0 license."
+granite4.2,granite4.2:30b,30b,19.0,309.6K,,coding|general,"IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, thinking and structured JSON output. Released under Apache 2.0 license."
+glm-5.3,glm-5.3,default,4.0,306.8K,tools|thinking|cloud,coding|general|reasoning,"Z.ai's flagship model and the most capable open-weights model for coding, with major gains on long-horizon agentic tasks."
+smallthinker,smallthinker:3b,3b,2.8,280.5K,,general|reasoning,A new small reasoning model fine-tuned from the Qwen 2.5 3B Instruct model.
+deepseek-v4.1-flash,deepseek-v4.1-flash,default,4.0,266.9K,vision|tools|thinking|cloud,general|reasoning|vision,"Designed for greater capability, faster inference, higher throughput, and scaling to larger models."
+kimi-k2.7-code,kimi-k2.7-code,default,4.0,266.1K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Kimi K2.7 Code is Moonshot AI's coding-focused agentic model built upon Kimi K2.6, with substantial improvements on real-world long-horizon coding tasks and roughly 30% lower thinking-token usage."
+qwen3.8-flash-next,qwen3.8-flash-next,default,4.0,262.8K,vision|tools|thinking,general|reasoning|vision,This experimental preview of the architecture that will underpin Qwen4.
+command-a,command-a:111b,111b,67.6,252.6K,tools,general,"111 billion parameter model optimized for demanding enterprises that require fast, secure, and high-quality AI"
+cogito-2.1,cogito-2.1:671b,671b,403.6,245K,,general,The Cogito v2.1 LLMs are instruction tuned generative models. All models are released under MIT license for commercial use.
+medgemma1.5,medgemma1.5:4b,4b,3.4,234.1K,vision,general|vision,MedGemma 1.5 4B is an updated version of the MedGemma 4B model.
+marco-o1,marco-o1:7b,7b,5.2,233.5K,,general|reasoning,An open large reasoning model for real-world solutions by the Alibaba International Digital Commerce Group (AIDC-AI).
+glm-5.3-flash,glm-5.3-flash,default,4.0,229.8K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Z.ai's first natively multimodal model, approaching Claude Opus 4.8 on coding and agentic benchmarks with just 18B active parameters."
+functiongemma,functiongemma,default,4.0,223.2K,,general,FunctionGemma is a specialized version of Google's Gemma 3 270M model fine-tuned explicitly for function calling. tools 270m
+command-r7b-arabic,command-r7b-arabic:7b,7b,5.2,219K,tools,general,A new state-of-the-art version of the lightweight Command R7B model that excels in advanced Arabic language capabilities for enterprises in the Middle East and Northern Africa.
+laguna-s-2.1,laguna-s-2.1,default,4.0,199.6K,tools|thinking,general|reasoning,"Our most capable model to date, designed for long-horizon work. 70.2% on Terminal-Bench 2.1 at 118B-A8B."
+bonsai-2,bonsai-2:2b,2b,2.2,194.4K,vision|tools|thinking,general|reasoning|vision,Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.
+bonsai-2,bonsai-2:4b,4b,3.4,194.4K,vision|tools|thinking,general|reasoning|vision,Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.
+bonsai-2,bonsai-2:9b,9b,6.4,194.4K,vision|tools|thinking,general|reasoning|vision,Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.
+bonsai-2,bonsai-2:27b,27b,17.2,194.4K,vision|tools|thinking,general|reasoning|vision,Bonsai 2 from Prism ML is a family of vision models built for ternary weights – smaller models with close to full-precision quality.
+gpt-oss-safeguard,gpt-oss-safeguard:20b,20b,13.0,181.4K,tools|thinking,general|reasoning,gpt-oss-safeguard-20b and gpt-oss-safeguard-120b are safety reasoning models built-upon gpt-oss
+gpt-oss-safeguard,gpt-oss-safeguard:120b,120b,73.0,181.4K,tools|thinking,general|reasoning,gpt-oss-safeguard-20b and gpt-oss-safeguard-120b are safety reasoning models built-upon gpt-oss
+embeddinggemma-2,embeddinggemma-2,default,4.0,178.4K,,embedding,EmbeddingGemma 2 is a multimodal embedding model from Google built on the Gemma 4 architecture. vision embedding audio 270m 440m 570m 740m
+tev1,tev1:0.8b,0.8b,1.48,176.4K,thinking,general|reasoning,A 4B decision model from Together AI for fast classification. tools decision
+tev1,tev1:4b,4b,3.4,176.4K,thinking,general|reasoning,A 4B decision model from Together AI for fast classification. tools decision
+nemotron-cascade-2,nemotron-cascade-2:30b,30b,19.0,174.5K,tools|thinking,general|reasoning,An open 30B MoE model from NVIDIA with 3B activated parameters that delivers strong reasoning and agentic capabilities.
+phonon,phonon,default,4.0,159.8K,,general,"Phonon is Gradium’s text-to-speech family. It turns written text into spoken audio as it generates, making it useful for reading assistant replies, narrating passages, and adding a voice to local apps."
+laguna-xs-2.1,laguna-xs-2.1,default,4.0,158.4K,tools|thinking,coding|general|reasoning,Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.
+nemotron-3-ultra,nemotron-3-ultra,default,4.0,156.3K,tools|thinking|cloud,general|reasoning,NVIDIA Nemotron 3 Ultra is built for high-throughput reasoning and long-running agent workflows.
+strands-decider,strands-decider:2b,2b,2.2,127.2K,,general,"A 2B decision model from Strands Agents for fast classification, routing, and scoring. decision"
+mimo-v2.6,mimo-v2.6:9b,9b,6.4,124.5K,vision|tools|thinking,coding|general|reasoning|vision,MiMo-V2.6-Distill-Qwen-9B is Xiaomi MiMo’s 9B model for code and agent workflows
+kimi-k3,kimi-k3,default,4.0,123.9K,vision|tools|thinking|cloud,general|reasoning|vision,"Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date."
+clef,clef:27b,27b,17.2,117.6K,cloud,general,Clef is a 27B multimodal model created by Cloudflare that turns a state and a schema of typed questions into decisions. vision decision
+d3,d3:2b,2b,2.2,111.9K,,general,"Turn text, structured data, and images into scored choices, yes/no answers, and ratings. vision decision"
+d3,d3:4b,4b,3.4,111.9K,,general,"Turn text, structured data, and images into scored choices, yes/no answers, and ratings. vision decision"
+d3,d3:9b,9b,6.4,111.9K,,general,"Turn text, structured data, and images into scored choices, yes/no answers, and ratings. vision decision"
+d3,d3:27b,27b,17.2,111.9K,,general,"Turn text, structured data, and images into scored choices, yes/no answers, and ratings. vision decision"
+flint,flint:40b,40b,25.0,106.7K,tools|thinking,coding|general|reasoning,"Flint is a 39.8 billion-parameter mixture-of-experts model from Recursive, built for coding agents."
+nimble,nimble:9b,9b,6.4,105.9K,thinking,general|reasoning,"A 9B decision model from Bespoke Labs for fast, typed classification. tools decision"
+lfm3,lfm3:1.7b,1.7b,2.02,105K,tools|thinking,general|reasoning,LFM3-1.7B is a tri-hybrid model for local agents and specialized applications.
+minicpm-v4.6,minicpm-v4.6:1b,1b,1.6,101.6K,vision,general|vision,A Pocket-Sized MLLM for Ultra-Efficient Image and Video Understanding on Your Phone
+north-mini-code-1.0,north-mini-code-1.0,default,4.0,93.6K,tools|thinking,coding|general|reasoning,"North Mini Code is Cohere's first model for developers — a 30B Mixture-of-Experts model with 3B active parameters, built for agentic software engineering."
+clef-flash,clef-flash:9b,9b,6.4,93.2K,,general,Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions. vision decision
+d1,d1:2b,2b,2.2,82.9K,,general,"d1 is a 3B decision model from Liquid AI, built on LFM2.5-VL-3B vision decision"
+d1,d1:3b,3b,2.8,82.9K,,general,"d1 is a 3B decision model from Liquid AI, built on LFM2.5-VL-3B vision decision"
+minicpm-v4.5,minicpm-v4.5:8b,8b,5.8,79.6K,vision,general|vision,"A GPT-4o Level MLLM for Single Image, Multi Image and High-FPS Video Understanding on Your Phone"
+beam,beam,default,4.0,78K,tools|thinking|cloud,coding|general|reasoning,"Beam is an open model by Reflection designed to deliver strong performance for areas such as agentic tool use, coding and general reasoning with an emphasis on token efficient usage."
+ripple-preview,ripple-preview:65b,65b,40.0,77.8K,tools|thinking,coding|general|reasoning,"65B dense model built for agentic coding, with up to 1M tokens of context."
+lfm3-omni,lfm3-omni:2b,2b,2.2,77.1K,vision|tools|audio,audio|general|vision,"a single end-to-end model that understands text, images, video and audio, and answers in text and speech"
+nemotron-3.5-bolt,nemotron-3.5-bolt,default,4.0,75.3K,,coding|general|reasoning,"Nemotron 3.5 Bolt is NVIDIA’s compact vision-language model for local coding, reasoning, and tool use. vision tools thinking audio e4b"
+d1-omni,d1-omni:2b,2b,2.2,68.7K,,general,d1-omni is a multimodal 600M decision model from Liquid AI vision decision audio 600m
+lfm3-vl,lfm3-vl:2b,2b,2.2,60K,vision|tools|thinking,general|reasoning|vision,LFM3-VL-2B is a vision-language model for on-device visual understanding.
+autotrust-jev,autotrust-jev:9b,9b,6.4,59.8K,,general,"AutoTrust’s decision models return choices, yes/no probabilities, and ratings for the questions you supply vision decision"
+autotrust-jev,autotrust-jev:35b,35b,22.0,59.8K,,general,"AutoTrust’s decision models return choices, yes/no probabilities, and ratings for the questions you supply vision decision"
+minimax-m3.1-flash,minimax-m3.1-flash,default,4.0,55.3K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
+granite4.1-guardian,granite4.1-guardian:8b,8b,5.8,52.5K,tools|thinking,general|reasoning,Granite Guardian 4.1 is a specialized safety and judging model from IBM Research that evaluates whether LLM prompts and responses meet specified harm criteria.
+lfm3-audio,lfm3-audio:2b,2b,2.2,51.7K,vision|tools|audio,audio|general|vision,"LFM3-Audio-2B is a compact, fully featured audio model."
+pplx-decider,pplx-decider:27b,27b,17.2,51.1K,,general,"pplx-decider is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B vision decision"
+laguna-xs.2,laguna-xs.2,default,4.0,48.5K,tools|thinking,coding|general|reasoning,Laguna XS.2 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.
+pplx-decider-flash,pplx-decider-flash:4b,4b,3.4,47.7K,,general,"pplx-decider-flash is a 4B decision model from Perplexity, built on Qwen3.5-4B vision decision"
+nemotron-3.5-super,nemotron-3.5-super:120b,120b,73.0,40.4K,vision|tools|thinking,coding|general|reasoning|vision,"Nemotron 3.5 Super is NVIDIA’s vision-language model for coding, reasoning, tool use, and document understanding"
+mistral-large-4,mistral-large-4,default,4.0,33.4K,vision|tools|thinking|cloud,general|reasoning|vision,"Mistral Large 4 is Mistral's open-weight, general-purpose multimodal model. Its granular Mixture-of-Experts design activates 52B of 1.05T total parameters, with a 1.6B vision encoder handling images."
+kev,kev,default,4.0,33K,,general,Kev scores answers to structured questions about a supplied text state in a single forward pass. decision
+nimble-v3,nimble-v3:9b,9b,6.4,32.3K,thinking,general|reasoning,"A 9B decision model from Bespoke Labs for fast classification, routing, and scoring. tools decision"
+laya,laya,default,4.0,30.7K,,general,"Laya is a 421M decision model from Convai Innovations, fine-tuned from ModernBERT-large. embedding decision"
+kimi-k3.1-pro,kimi-k3.1-pro,default,4.0,24.6K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Kimi K3.1 Pro is an open-weight, natively multimodal agentic model and our most capable 3T-class model to date, with a 1M-token context window and major gains in coding, 3D creation, financial research, and factual accuracy."
+muse-spark-open,muse-spark-open,default,4.0,23.6K,vision|tools|thinking|cloud,coding|general|reasoning|vision,"Muse Spark Open is a natively multimodal model with 816B total parameters (42B active) and a 1M-token context window. Built for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning."
+mimo-v2.6-flash,mimo-v2.6-flash,default,4.0,759,,general,"Xiaomi's efficiency-balanced MiMo-V2.6 checkpoint, with 309B total parameters, 15B active, omnimodal input, and a 1M token context. vision tools thinking cloud 8,"
+mimo-v2.6-pro,mimo-v2.6-pro,default,4.0,139,,general,"Xiaomi's flagship MiMo-V2.6 checkpoint, with 1.02T total parameters, 42B active, omnimodal input, and a 1M token context. vision tools thinking cloud 8,"
+inkling-2-small,inkling-2-small,default,4.0,940,,coding|general,"594B Mixture-of-Experts model (17B active) with image input and up to 1M tokens of context, built for agentic coding and knowledge work. vision tools thinking cloud 4,"
