@@ -1,11 +1,11 @@
 {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "source": "live",
-  "model_count": 271,
-  "variant_count": 462,
+  "model_count": 272,
+  "variant_count": 463,
   "diff": {
     "added": [
-      "inkling-2-mini"
+      "hy4"
     ],
     "removed": []
   }
